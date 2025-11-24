@@ -1,0 +1,1068 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-left: -200px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 120px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 120px;
+    margin-top: 37px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+nav button {
+    background-color: #fffdfd;
+    border-radius: 7px;
+    color: white;
+    padding: 12px 22px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    width: 274px;
+    height: 62px;
+    font-weight: 500;
+    letter-spacing: -3%;
+    line-height: 100%;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    margin-left: -50px;
+}
+
+nav button:hover {
+    background-color: #fdfd08;
+    color: #f2ff00;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: a11 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #333;
+    transition: a11 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: #ff0000;
+    padding-left: 25px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.grid-container {
+    max-width: 1400px;
+    margin: 30px auto;
+    margin-left: 0px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 300px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 60px 40px;
+    box-shadow: 60px 10px 90px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 350px;
+}
+
+.drop-down-second {
+    position: relative;
+}
+
+.drop-down-menu-second {
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: a11 0.3s ease;
+    z-index: 1000;
+}
+
+.drop-down-menu-second li {
+    padding: 0;
+}
+
+.drop-down-menu-second a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #333;
+    transition: a11 0.3s;
+}
+
+.drop-down-menu-second a:hover {
+    background-color: #f5f5f5;
+    color: #ff0000;
+    padding-left: 25px;
+}
+
+.drop-down-second:hover .drop-down-menu-second {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.page-header {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 60px 20px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page-title {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 80%;
+}
+
+.exercise-Front-and-Back-Neck-Stretch {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.FrontandBackNeckStretch {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.FrontandBackNeckStretch h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.FrontandBackNeckStretch-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.FrontandBackNeckStretch img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Front-and-Back-Neck-Stretch {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Front-and-Back-Neck-Stretch:hover {
+    background-color: #079590;
+}
+
+.button-add-Front-and-Back-Neck-Stretch {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Front-and-Back-Neck-Stretch:hover {
+    background-color: #079590;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.exercise-Chin-Tuck {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.ChinTuck {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.ChinTuck h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.ChinTuck-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.ChinTuck img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Chin-Tuck {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Chin-Tuck:hover {
+    background-color: #079590;
+}
+
+.button-add-Chin-Tuck {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Chin-Tuck:hover {
+    background-color: #079590;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.exercise-Prone-Cervical-Extension {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.ProneCervicalExtension {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.ProneCervicalExtension h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.ProneCervicalExtension-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.ProneCervicalExtension img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Prone-Cervical-Extension {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Prone-Cervical-Extension:hover {
+    background-color: #079590;
+}
+
+.button-add-Prone-Cervical-Extension {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Prone-Cervical-Extension:hover {
+    background-color: #079590;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.exercise-Kneeling-Neck-Stretch {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.KneelingNeckStretch {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.KneelingNeckStretch h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.KneelingNeckStretch-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.KneelingNeckStretch img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Kneeling-Neck-Stretch {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Kneeling-Neck-Stretch:hover {
+    background-color: #079590;
+}
+
+.button-add-Kneeling-Neck-Stretch {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Kneeling-Neck-Stretch:hover {
+    background-color: #079590;
+}
+
+.exercise-Weighted-Neck-Harness-Extension {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.WeightedNeckHarnessExtension {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.WeightedNeckHarnessExtension h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.WeightedNeckHarnessExtension-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.WeightedNeckHarnessExtension img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Weighted-Neck-Harness-Extension {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Weighted-Neck-Harness-Extension:hover {
+    background-color: #079590;
+}
+
+.button-add-Weighted-Neck-Harness-Extension {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Weighted-Neck-Harness-Extension:hover {
+    background-color: #079590;
+}
+
+.exercise-Lying-Weighted-Neck-Flexion {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.LyingWeightedNeckFlexion {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.LyingWeightedNeckFlexion h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.LyingWeightedNeckFlexion-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.LyingWeightedNeckFlexion img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Lying-Weighted-Neck-Flexion {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Lying-Weighted-Neck-Flexion:hover {
+    background-color: #079590;
+}
+
+.button-add-Lying-Weighted-Neck-Flexion {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Lying-Weighted-Neck-Flexion:hover {
+    background-color: #079590;
+}
+
+.exercise-Lying-Weighted-Neck-Extension {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.LyingWeightedNeckExtension {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.LyingWeightedNeckExtension h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.LyingWeightedNeckExtension-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.LyingWeightedNeckExtension img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Lying-Weighted-Neck-Extension {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Lying-Weighted-Neck-Extension:hover {
+    background-color: #079590;
+}
+
+.button-add-Lying-Weighted-Neck-Extension {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Lying-Weighted-Neck-Extension:hover {
+    background-color: #079590;
+}
+
+.exercise-Lever-Neck-Right-Side-Flexion {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.LeverNeckRightSideFlexionplateloaded {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.LeverNeckRightSideFlexionplateloaded h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.LeverNeckRightSideFlexionplateloaded-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.LeverNeckRightSideFlexionplateloaded img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Lever-Neck-Right-Side-Flexion {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Lever-Neck-Right-Side-Flexion:hover {
+    background-color: #079590;
+}
+
+.button-add-Lever-Neck-Right-Side-Flexion {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Lever-Neck-Right-Side-Flexion:hover {
+    background-color: #079590;
+}
+
+.exercise-Lever-Neck-Extension {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.LeverNeckExtensionplateloaded {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.LeverNeckExtensionplateloaded h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.LeverNeckExtensionplateloaded-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.LeverNeckExtensionplateloaded img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Lever-Neck-Extension {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Lever-Neck-Extension:hover {
+    background-color: #079590;
+}
+
+.button-add-Lever-Neck-Extension {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Lever-Neck-Extension:hover {
+    background-color: #079590;
+}
+
+.exercise-Cable-Seated-Neck-Flexion-with-head-harness {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 90px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+}
+
+.CableSeatedNeckFlexionwithheadharness {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.CableSeatedNeckFlexionwithheadharness h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.CableSeatedNeckFlexionwithheadharness-equipment {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.CableSeatedNeckFlexionwithheadharness img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 800px;
+}
+
+.button-view-details-Cable-Seated-Neck-Flexion-with-head-harness {
+    background-color: #cb1313;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -70px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.button-view-details-Cable-Seated-Neck-Flexion-with-head-harness:hover {
+    background-color: #079590;
+}
+
+.button-add-Cable-Seated-Neck-Flexion-with-head-harness {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.button-add-Cable-Seated-Neck-Flexion-with-head-harness:hover {
+    background-color: #079590;
+}
+
+.pagination-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.pagination-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagination a:hover {
+    background-color: #d32f2f;
+    border-color: #999;
+}
+
+.pagination .active-second a {
+    background-color: #d32f2f;
+    color: white;
+    border-color: #d32f2f;
+}
+
+.pagination .active-second a:hover {
+    background-color: #d32f2f;
+}
