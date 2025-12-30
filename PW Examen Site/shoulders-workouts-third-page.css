@@ -1,0 +1,691 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 155px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+nav button {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    padding: 12px 22px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+nav button:hover {
+    background-color: #fffb00;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: a11 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #333;
+    transition: a11 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: #ff0000;
+    padding-left: 25px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.grid-container {
+    max-width: 1400px;
+    margin: 30px auto;
+    margin-left: 0px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 300px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 60px 40px;
+    box-shadow: 60px 10px 90px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 350px;
+}
+
+.drop-down-second {
+    position: relative;
+}
+
+.drop-down-menu-second {
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: a11 0.3s ease;
+    z-index: 1000;
+}
+
+.drop-down-menu-second li {
+    padding: 0;
+}
+
+.drop-down-menu-second a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #333;
+    transition: a11 0.3s;
+}
+
+.drop-down-menu-second a:hover {
+    background-color: #f5f5f5;
+    color: #ff0000;
+    padding-left: 25px;
+}
+
+.drop-down-second:hover .drop-down-menu-second {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.page-header {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 60px 20px;
+}
+
+.header-content {
+    max-width: 1720px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page-title {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 80%;
+}
+
+section#exercises-HandstandPushUp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 170px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-HandstandPushUp h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-HandstandPushUp p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-HandstandPushUp img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-HandstandPushUp .button-view-details-HandstandPushUp {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-HandstandPushUp .button-view-details-HandstandPushUp:hover {
+    background-color: #079590;
+}
+
+section#exercises-HandstandPushUp .button-add-HandstandPushUp {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-HandstandPushUp .button-add-HandstandPushUp:hover {
+    background-color: #079590;
+}
+
+section#exercises-CirclesArm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 170px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CirclesArm h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CirclesArm p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CirclesArm img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-CirclesArm .button-view-details-CirclesArm {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-CirclesArm .button-view-details-CirclesArm:hover {
+    background-color: #079590;
+}
+
+section#exercises-CirclesArm .button-add-CirclesArm {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-CirclesArm .button-add-CirclesArm:hover {
+    background-color: #079590;
+}
+
+section#exercises-RearFly {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 160px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-RearFly h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-RearFly p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-RearFly img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-RearFly .button-view-details-RearFly {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-RearFly .button-view-details-RearFly:hover {
+    background-color: #079590;
+}
+
+section#exercises-RearFly .button-add-RearFly {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-RearFly .button-add-RearFly:hover {
+    background-color: #079590;
+}
+
+section#exercises-DumbbellOneArmShoulderPress {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 210px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-DumbbellOneArmShoulderPress h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-DumbbellOneArmShoulderPress p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-DumbbellOneArmShoulderPress img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-DumbbellOneArmShoulderPress .button-view-details-DumbbellOneArmShoulderPress {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-DumbbellOneArmShoulderPress
+    .button-view-details-DumbbellOneArmShoulderPress:hover {
+    background-color: #079590;
+}
+
+section#exercises-DumbbellOneArmShoulderPress .button-add-DumbbellOneArmShoulderPress {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-DumbbellOneArmShoulderPress .button-add-DumbbellOneArmShoulderPress:hover {
+    background-color: #079590;
+}
+
+section#exercises-DumbbellStandingAroundWorld {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 210px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-DumbbellStandingAroundWorld h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-DumbbellStandingAroundWorld p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-DumbbellStandingAroundWorld img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-DumbbellStandingAroundWorld .button-view-details-DumbbellStandingAroundWorld {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-DumbbellStandingAroundWorld
+    .button-view-details-DumbbellStandingAroundWorld:hover {
+    background-color: #079590;
+}
+
+section#exercises-DumbbellStandingAroundWorld .button-add-DumbbellStandingAroundWorld {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-DumbbellStandingAroundWorld .button-add-DumbbellStandingAroundWorld:hover {
+    background-color: #079590;
+}
+
+section#exercises-DumbbellCubanPress {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 170px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-DumbbellCubanPress h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-DumbbellCubanPress p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-DumbbellCubanPress img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-DumbbellCubanPress .button-view-details-DumbbellCubanPress {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-DumbbellCubanPress .button-view-details-DumbbellCubanPress:hover {
+    background-color: #079590;
+}
+
+section#exercises-DumbbellCubanPress .button-add-DumbbellCubanPress {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-DumbbellCubanPress .button-add-DumbbellCubanPress:hover {
+    background-color: #079590;
+}
+
+.pagination-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.pagination-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagination a:hover {
+    background-color: #d32f2f;
+    border-color: #999;
+}
+
+.pagination .active-first a {
+    background-color: #d32f2f;
+    color: white;
+    border-color: #d32f2f;
+}
+
+.pagination .active-first a:hover {
+    background-color: #d32f2f;
+}
+
+.pagination .dots {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    color: #666;
+}
+
+.pagination .next a {
+    color: #d32f2f;
+    font-weight: 500;
+}

@@ -6,8 +6,7 @@
 
 body {
     width: 100%;
-    position: relative;
-    overflow-x: hidden;
+    min-height: 100vh;
     background-color: #fff;
     color: #333;
     font-family: 'Poppins', sans-serif;
@@ -17,18 +16,16 @@ nav {
     background-color: #fff;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, #ffffff, #ffffff);
 }
 
 .nav-container {
-    max-width: 1400px;
+    max-width: 1800px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    font-family: 'Poppins', sans-serif;
+    padding: 0 40px;
 }
 
 .logo {
@@ -38,19 +35,15 @@ nav {
     font-size: 30px;
     font-weight: 900;
     letter-spacing: 5px;
-    margin-left: -200px;
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     display: inline-block;
 }
 
 .nav-links {
     display: flex;
-    gap: 120px;
+    gap: 155px;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 120px;
-    margin-top: 37px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -61,42 +54,27 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s;
-    font-family: 'Poppins', sans-serif;
 }
 
 .nav-links a:hover {
     color: #ff0000;
 }
 
-h1 {
-    font-size: 96px;
-    font-weight: 900;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.2;
-    letter-spacing: -2px;
-    margin-bottom: 30px;
-}
-
 nav button {
-    background-color: #fffdfd;
+    background-color: #ffffff;
+    border: 2px solid #000000;
     border-radius: 7px;
-    color: white;
     padding: 12px 22px;
-    font-family: 'Poppins', sans-serif;
     font-size: 22px;
-    width: 274px;
-    height: 62px;
     font-weight: 500;
-    letter-spacing: -3%;
-    line-height: 100%;
-    margin-top: -15px;
-    margin-bottom: 20px;
-    margin-left: -50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
 }
 
 nav button:hover {
-    background-color: #fdfd08;
-    color: #f2ff00;
+    background-color: #fffb00;
+    color: white;
 }
 
 .dropdown {
@@ -222,7 +200,7 @@ nav button:hover {
 }
 
 .header-content {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     text-align: left;
 }
@@ -243,62 +221,56 @@ nav button:hover {
     margin-right: 80%;
 }
 
-.exercise-Overhead-Shrug {
-    background-color: white;
-    color: black;
-    padding: 70px 90px;
+section#exercises-OverheadShrug {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 130px;
     border-bottom: 2px solid #f0f0f0;
     height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.OverheadShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.OverheadShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-OverheadShrug h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.OverheadShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-OverheadShrug p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.OverheadShrug img {
+section#exercises-OverheadShrug img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Overhead-Shrug {
+section#exercises-OverheadShrug .button-view-details-OverheadShrug {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Overhead-Shrug:hover {
+section#exercises-OverheadShrug .button-view-details-OverheadShrug:hover {
     background-color: #079590;
 }
 
-.button-add-Overhead-Shrug {
+section#exercises-OverheadShrug .button-add-OverheadShrug {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -307,76 +279,65 @@ nav button:hover {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Overhead-Shrug:hover {
+section#exercises-OverheadShrug .button-add-OverheadShrug:hover {
     background-color: #079590;
 }
 
-strong {
-    font-weight: 700;
-}
-
-.exercise-Gittleson-Shrug {
+section#exercises-GittlesonShrug {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 140px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.GittlesonShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.GittlesonShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-GittlesonShrug h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.GittlesonShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-GittlesonShrug p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.GittlesonShrug img {
+section#exercises-GittlesonShrug img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Gittleson-Shrug {
+section#exercises-GittlesonShrug .button-view-details-GittlesonShrug {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Gittleson-Shrug:hover {
+section#exercises-GittlesonShrug .button-view-details-GittlesonShrug:hover {
     background-color: #079590;
 }
 
-.button-add-Gittleson-Shrug {
+section#exercises-GittlesonShrug .button-add-GittlesonShrug {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -385,72 +346,65 @@ strong {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Gittleson-Shrug:hover {
+section#exercises-GittlesonShrug .button-add-GittlesonShrug:hover {
     background-color: #079590;
 }
 
-.exercise-45-Degree-Incline-Dumbbell-Row {
+section#exercises-45DegreeInclineDumbbellRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 180px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.DegreeInclineDumbbellRow {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.DegreeInclineDumbbellRow h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-45DegreeInclineDumbbellRow h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.DegreeInclineDumbbellRow-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-45DegreeInclineDumbbellRow p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.DegreeInclineDumbbellRow img {
+section#exercises-45DegreeInclineDumbbellRow img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Degree-Incline-Dumbbell-Row {
+section#exercises-45DegreeInclineDumbbellRow .button-view-details-45DegreeInclineDumbbellRow {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Degree-Incline-Dumbbell-Row:hover {
+section#exercises-45DegreeInclineDumbbellRow .button-view-details-45DegreeInclineDumbbellRow:hover {
     background-color: #079590;
 }
 
-.button-add-Degree-Incline-Dumbbell-Row {
+section#exercises-45DegreeInclineDumbbellRow .button-add-45DegreeInclineDumbbellRow {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -459,72 +413,65 @@ strong {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Degree-Incline-Dumbbell-Row:hover {
+section#exercises-45DegreeInclineDumbbellRow .button-add-45DegreeInclineDumbbellRow:hover {
     background-color: #079590;
 }
 
-.exercise-Dumbbell-Shrug {
+section#exercises-DumbbellShrug {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 130px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.DumbbellShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.DumbbellShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-DumbbellShrug h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.DumbbellShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-DumbbellShrug p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.DumbbellShrug img {
+section#exercises-DumbbellShrug img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Dumbbell-Shrug {
+section#exercises-DumbbellShrug .button-view-details-DumbbellShrug {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Dumbbell-Shrug:hover {
+section#exercises-DumbbellShrug .button-view-details-DumbbellShrug:hover {
     background-color: #079590;
 }
 
-.button-add-Dumbbell-Shrug {
+section#exercises-DumbbellShrug .button-add-DumbbellShrug {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -533,72 +480,65 @@ strong {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Dumbbell-Shrug:hover {
+section#exercises-DumbbellShrug .button-add-DumbbellShrug:hover {
     background-color: #079590;
 }
 
-.exercise-Cable-Shrug {
+section#exercises-CableShrug {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 120px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.CableShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.CableShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-CableShrug h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.CableShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-CableShrug p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.CableShrug img {
+section#exercises-CableShrug img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Cable-Shrug {
+section#exercises-CableShrug .button-view-details-CableShrug {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Cable-Shrug:hover {
+section#exercises-CableShrug .button-view-details-CableShrug:hover {
     background-color: #079590;
 }
 
-.button-add-Cable-Shrug {
+section#exercises-CableShrug .button-add-CableShrug {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -607,72 +547,65 @@ strong {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Cable-Shrug:hover {
+section#exercises-CableShrug .button-add-CableShrug:hover {
     background-color: #079590;
 }
 
-.exercise-Barbell-Shrug {
+section#exercises-BarbellShrug {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 120px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.BarbellShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.BarbellShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-BarbellShrug h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.BarbellShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-BarbellShrug p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.BarbellShrug img {
+section#exercises-BarbellShrug img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Barbell-Shrug {
+section#exercises-BarbellShrug .button-view-details-BarbellShrug {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Barbell-Shrug:hover {
+section#exercises-BarbellShrug .button-view-details-BarbellShrug:hover {
     background-color: #079590;
 }
 
-.button-add-Barbell-Shrug {
+section#exercises-BarbellShrug .button-add-BarbellShrug {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -681,311 +614,12 @@ strong {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Barbell-Shrug:hover {
-    background-color: #079590;
-}
-
-.exercise-Behind-The-Back-Barbell-Shrug {
-    border-bottom: 2px solid #f0f0f0;
-    height: 190px;
-}
-
-.BehindTheBackBarbellShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.BehindTheBackBarbellShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
-}
-
-.BehindTheBackBarbellShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.BehindTheBackBarbellShrug img {
-    width: 200px;
-    height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
-}
-
-.button-view-details-Behind-The-Back-Barbell-Shrug {
-    background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
-    font-weight: 600;
-}
-
-.button-view-details-Behind-The-Back-Barbell-Shrug:hover {
-    background-color: #079590;
-}
-
-.button-add-Behind-The-Back-Barbell-Shrug {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
-    font-weight: 600;
-}
-
-.button-add-Behind-The-Back-Barbell-Shrug:hover {
-    background-color: #079590;
-}
-
-.exercise-Dumbbell-Incline-Shrug {
-    border-bottom: 2px solid #f0f0f0;
-    height: 190px;
-}
-
-.DumbbellInclineShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.DumbbellInclineShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
-}
-
-.DumbbellInclineShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.DumbbellInclineShrug img {
-    width: 200px;
-    height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
-}
-
-.button-view-details-Dumbbell-Incline-Shrug {
-    background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
-    font-weight: 600;
-}
-
-.button-view-details-Dumbbell-Incline-Shrug:hover {
-    background-color: #079590;
-}
-
-.button-add-Dumbbell-Incline-Shrug {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
-    font-weight: 600;
-}
-
-.button-add-Dumbbell-Incline-Shrug:hover {
-    background-color: #079590;
-}
-
-.exercise-Prone-Incline-Shrug {
-    border-bottom: 2px solid #f0f0f0;
-    height: 190px;
-}
-
-.ProneInclineShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.ProneInclineShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
-}
-
-.ProneInclineShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.ProneInclineShrug img {
-    width: 200px;
-    height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
-}
-
-.button-view-details-Prone-Incline-Shrug {
-    background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
-    font-weight: 600;
-}
-
-.button-view-details-Prone-Incline-Shrug:hover {
-    background-color: #079590;
-}
-
-.button-add-Dumbbell-Prone-Incline-Shrug {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
-    font-weight: 600;
-}
-
-.button-add-Dumbbell-Prone-Incline-Shrug:hover {
-    background-color: #079590;
-}
-
-.exercise-Lever-Shrug {
-    border-bottom: 2px solid #f0f0f0;
-    height: 190px;
-}
-
-.LeverShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.LeverShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
-}
-
-.LeverShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.LeverShrug img {
-    width: 200px;
-    height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
-}
-
-.button-view-details-Lever-Shrug {
-    background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
-    font-weight: 600;
-}
-
-.button-view-details-Lever-Shrug:hover {
-    background-color: #079590;
-}
-
-.button-add-Lever-Shrug {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
-    font-weight: 600;
-}
-
-.button-add-Lever-Shrug:hover {
+section#exercises-BarbellShrug .button-add-BarbellShrug:hover {
     background-color: #079590;
 }
 

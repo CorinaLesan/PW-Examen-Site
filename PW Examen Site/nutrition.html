@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="nutrition.css" />
+        <link rel="icon" type="image/svg" href="img/logo.svg" />
+        <title>BodyPower</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <a href="aindex.html" class="logo">BODYPOWER</a>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="#">WORKOUTS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="neck-workouts.html">Neck</a></li>
+                                <li><a href="trapezius-workouts.html">Trapezius</a></li>
+                                <li><a href="shoulders-workouts.html">Shoulder</a></li>
+                                <li><a href="chest-workouts.html">Chest</a></li>
+                                <li><a href="back-wing-workouts.html">Back / Wing</a></li>
+                                <li><a href="biceps-workouts.html">Biceps</a></li>
+                                <li><a href="triceps-workouts.html">Triceps</a></li>
+                                <li><a href="abs-core-workouts.html">Abs / Core</a></li>
+                                <li><a href="leg-workouts.html">Leg</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-down-second">
+                            <a href="#">CALCULATOR</a>
+                            <ul class="drop-down-menu-second">
+                                <li><a href="calculatorbmi.html">Body Mass Index (BMI) </a></li>
+                                <li><a href="onerepmax.html"> One Rep Max Calculator</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="nutrition.html">NUTRITION</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                        <button><a href="register.html">LOGIN / REGISTER</a></button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="page-header">
+                <div class="header-content">
+                    <h1 class="page-title">NUTRITION</h1>
+                    <p class="page-subtitle">Track Your Daily Nutrition & Calories</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Дневная статистика -->
+            <section class="daily-stats">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <h3>Daily Goal</h3>
+                        <p class="stat-value" id="dailyGoal">2000</p>
+                        <p class="stat-label">calories</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Consumed</h3>
+                        <p class="stat-value" id="consumed">0</p>
+                        <p class="stat-label">calories</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Remaining</h3>
+                        <p class="stat-value" id="remaining">2000</p>
+                        <p class="stat-label">calories</p>
+                    </div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </section>
+
+            <!-- Макронутриенты -->
+            <section class="macros-section">
+                <div class="macros-container">
+                    <div class="macro-card">
+                        <h4>Protein</h4>
+                        <p class="macro-value"><span id="protein">0</span>g</p>
+                        <div class="macro-progress">
+                            <div class="macro-bar protein-bar" id="proteinBar"></div>
+                        </div>
+                    </div>
+                    <div class="macro-card">
+                        <h4>Carbs</h4>
+                        <p class="macro-value"><span id="carbs">0</span>g</p>
+                        <div class="macro-progress">
+                            <div class="macro-bar carbs-bar" id="carbsBar"></div>
+                        </div>
+                    </div>
+                    <div class="macro-card">
+                        <h4>Fats</h4>
+                        <p class="macro-value"><span id="fats">0</span>g</p>
+                        <div class="macro-progress">
+                            <div class="macro-bar fats-bar" id="fatsBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Табы -->
+            <section class="tabs-section">
+                <div class="tabs-container">
+                    <button class="tab-btn active" onclick="switchTab('today')">
+                        Today's Food
+                    </button>
+                    <button class="tab-btn" onclick="switchTab('database')">Food Database</button>
+                </div>
+            </section>
+
+            <!-- Today's Food -->
+            <section id="todayTab" class="content-section active">
+                <div class="content-container">
+                    <div class="section-header">
+                        <h2>Today's Meals</h2>
+                        <button class="add-btn" onclick="openAddFoodModal()">+ Add Food</button>
+                    </div>
+
+                    <div class="meals-container">
+                        <div class="meal-section">
+                            <h3>Breakfast</h3>
+                            <div id="breakfastList" class="food-list"></div>
+                            <p class="meal-total">Total: <span id="breakfastTotal">0</span> cal</p>
+                        </div>
+
+                        <div class="meal-section">
+                            <h3>Lunch</h3>
+                            <div id="lunchList" class="food-list"></div>
+                            <p class="meal-total">Total: <span id="lunchTotal">0</span> cal</p>
+                        </div>
+
+                        <div class="meal-section">
+                            <h3>Dinner</h3>
+                            <div id="dinnerList" class="food-list"></div>
+                            <p class="meal-total">Total: <span id="dinnerTotal">0</span> cal</p>
+                        </div>
+
+                        <div class="meal-section">
+                            <h3>Snacks</h3>
+                            <div id="snacksList" class="food-list"></div>
+                            <p class="meal-total">Total: <span id="snacksTotal">0</span> cal</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Food Database -->
+            <section id="databaseTab" class="content-section">
+                <div class="content-container">
+                    <div class="section-header">
+                        <h2>Food Database</h2>
+                        <div class="search-container">
+                            <input
+                                type="text"
+                                id="searchFood"
+                                placeholder="Search food..."
+                                onkeyup="searchFoodDatabase()"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="database-container">
+                        <div class="database-categories">
+                            <button class="category-btn active" onclick="filterCategory('all')">
+                                All
+                            </button>
+                            <button class="category-btn" onclick="filterCategory('protein')">
+                                Protein
+                            </button>
+                            <button class="category-btn" onclick="filterCategory('vegetables')">
+                                Vegetables
+                            </button>
+                            <button class="category-btn" onclick="filterCategory('fruits')">
+                                Fruits
+                            </button>
+                            <button class="category-btn" onclick="filterCategory('grains')">
+                                Grains
+                            </button>
+                            <button class="category-btn" onclick="filterCategory('dairy')">
+                                Dairy
+                            </button>
+                            <button class="category-btn" onclick="filterCategory('snacks')">
+                                Snacks
+                            </button>
+                        </div>
+
+                        <div id="foodDatabase" class="food-database-grid"></div>
+                    </div>
+                </div>
+            </section>
+
+
+        <!-- Modal для добавления еды -->
+        <div id="addFoodModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAddFoodModal()">&times;</span>
+                <h2>Add Food</h2>
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Select Meal</label>
+                        <select id="mealType">
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snacks">Snacks</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Search Food</label>
+                        <input
+                            type="text"
+                            id="modalSearchFood"
+                            placeholder="Type to search..."
+                            onkeyup="searchInModal()"
+                        />
+                    </div>
+
+                    <div id="modalFoodList" class="modal-food-list"></div>
+
+                    <div class="form-group">
+                        <label>Serving Size (g)</label>
+                        <input type="number" id="servingSize" value="100" min="1" />
+                    </div>
+
+                    <button class="modal-btn" onclick="addFoodToMeal()">Add to Meal</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="nutrition.js"></script>
+    </body>
+</html>

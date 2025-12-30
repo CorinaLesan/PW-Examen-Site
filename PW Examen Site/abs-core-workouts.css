@@ -1,0 +1,690 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 155px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+nav button {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    padding: 12px 22px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+nav button:hover {
+    background-color: #fffb00;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: a11 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #333;
+    transition: a11 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: #ff0000;
+    padding-left: 25px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.grid-container {
+    max-width: 1400px;
+    margin: 30px auto;
+    margin-left: 0px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 300px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 60px 40px;
+    box-shadow: 60px 10px 90px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 350px;
+}
+
+.drop-down-second {
+    position: relative;
+}
+
+.drop-down-menu-second {
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: a11 0.3s ease;
+    z-index: 1000;
+}
+
+.drop-down-menu-second li {
+    padding: 0;
+}
+
+.drop-down-menu-second a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #333;
+    transition: a11 0.3s;
+}
+
+.drop-down-menu-second a:hover {
+    background-color: #f5f5f5;
+    color: #ff0000;
+    padding-left: 25px;
+}
+
+.drop-down-second:hover .drop-down-menu-second {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.page-header {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 60px 20px;
+}
+
+.header-content {
+    max-width: 1720px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page-title {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 80%;
+}
+
+section#exercises-CrunchFloor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 130px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CrunchFloor h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CrunchFloor p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CrunchFloor img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-CrunchFloor .button-view-details-CrunchFloor {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-CrunchFloor .button-view-details-CrunchFloor:hover {
+    background-color: #079590;
+}
+
+section#exercises-CrunchFloor .button-add-CrunchFloor {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-CrunchFloor .button-add-CrunchFloor:hover {
+    background-color: #079590;
+}
+
+section#exercises-LeverTotalAbdominalCrunch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 165px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-LeverTotalAbdominalCrunch h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-LeverTotalAbdominalCrunch p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-LeverTotalAbdominalCrunch img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-LeverTotalAbdominalCrunch .button-view-details-LeverTotalAbdominalCrunch {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-LeverTotalAbdominalCrunch .button-view-details-LeverTotalAbdominalCrunch:hover {
+    background-color: #079590;
+}
+
+section#exercises-LeverTotalAbdominalCrunch .button-add-LeverTotalAbdominalCrunch {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-LeverTotalAbdominalCrunch .button-add-LeverTotalAbdominalCrunch:hover {
+    background-color: #079590;
+}
+
+section#exercises-CaptainsChairStraightLegRaise {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 176px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CaptainsChairStraightLegRaise h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CaptainsChairStraightLegRaise p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CaptainsChairStraightLegRaise img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-CaptainsChairStraightLegRaise .button-view-details-CaptainsChairStraightLegRaise {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-CaptainsChairStraightLegRaise
+    .button-view-details-CaptainsChairStraightLegRaise:hover {
+    background-color: #079590;
+}
+
+section#exercises-CaptainsChairStraightLegRaise .button-add-CaptainsChairStraightLegRaise {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-CaptainsChairStraightLegRaise .button-add-CaptainsChairStraightLegRaise:hover {
+    background-color: #079590;
+}
+
+section#exercises-CableKneelingCrunch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 137px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CableKneelingCrunch h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CableKneelingCrunch p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-CableKneelingCrunch img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-CableKneelingCrunch .button-view-details-CableKneelingCrunch {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-CableKneelingCrunch .button-view-details-CableKneelingCrunch:hover {
+    background-color: #079590;
+}
+
+section#exercises-CableKneelingCrunch .button-add-CableKneelingCrunch {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-CableKneelingCrunch .button-add-CableKneelingCrunch:hover {
+    background-color: #079590;
+}
+
+section#exercises-FrontPlank {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 128px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-FrontPlank h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-FrontPlank p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-FrontPlank img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-FrontPlank .button-view-details-FrontPlank {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-FrontPlank .button-view-details-FrontPlank:hover {
+    background-color: #079590;
+}
+
+section#exercises-FrontPlank .button-add-FrontPlank {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-FrontPlank .button-add-FrontPlank:hover {
+    background-color: #079590;
+}
+
+section#exercises-RussianTwist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 128px;
+    border-bottom: 2px solid #f0f0f0;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-RussianTwist h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-RussianTwist p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#exercises-RussianTwist img {
+    width: 440px;
+    height: 200px;
+    margin: 10px 0 0 10px;
+}
+
+section#exercises-RussianTwist .button-view-details-RussianTwist {
+    background-color: #cb1313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 182px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+section#exercises-RussianTwist .button-view-details-RussianTwist:hover {
+    background-color: #079590;
+}
+
+section#exercises-RussianTwist .button-add-RussianTwist {
+    background-color: #4caf50;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 102px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+section#exercises-RussianTwist .button-add-RussianTwist:hover {
+    background-color: #079590;
+}
+
+.pagination-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.pagination-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagination a:hover {
+    background-color: #d32f2f;
+    border-color: #999;
+}
+
+.pagination .active-first a {
+    background-color: #d32f2f;
+    color: white;
+    border-color: #d32f2f;
+}
+
+.pagination .active-first a:hover {
+    background-color: #d32f2f;
+}
+
+.pagination .dots {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    color: #666;
+}
+
+.pagination .next a {
+    color: #d32f2f;
+    font-weight: 500;
+}

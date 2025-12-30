@@ -6,8 +6,7 @@
 
 body {
     width: 100%;
-    position: relative;
-    overflow-x: hidden;
+    min-height: 100vh;
     background-color: #fff;
     color: #333;
     font-family: 'Poppins', sans-serif;
@@ -17,18 +16,16 @@ nav {
     background-color: #fff;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, #ffffff, #ffffff);
 }
 
 .nav-container {
-    max-width: 1400px;
+    max-width: 1800px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    font-family: 'Poppins', sans-serif;
+    padding: 0 40px;
 }
 
 .logo {
@@ -38,19 +35,15 @@ nav {
     font-size: 30px;
     font-weight: 900;
     letter-spacing: 5px;
-    margin-left: -200px;
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     display: inline-block;
 }
 
 .nav-links {
     display: flex;
-    gap: 120px;
+    gap: 155px;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 120px;
-    margin-top: 37px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -61,42 +54,27 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s;
-    font-family: 'Poppins', sans-serif;
 }
 
 .nav-links a:hover {
     color: #ff0000;
 }
 
-h1 {
-    font-size: 96px;
-    font-weight: 900;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.2;
-    letter-spacing: -2px;
-    margin-bottom: 30px;
-}
-
 nav button {
-    background-color: #fffdfd;
+    background-color: #ffffff;
+    border: 2px solid #000000;
     border-radius: 7px;
-    color: white;
     padding: 12px 22px;
-    font-family: 'Poppins', sans-serif;
     font-size: 22px;
-    width: 274px;
-    height: 62px;
     font-weight: 500;
-    letter-spacing: -3%;
-    line-height: 100%;
-    margin-top: -15px;
-    margin-bottom: 20px;
-    margin-left: -50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
 }
 
 nav button:hover {
-    background-color: #fdfd08;
-    color: #f2ff00;
+    background-color: #fffb00;
+    color: white;
 }
 
 .dropdown {
@@ -222,7 +200,7 @@ nav button:hover {
 }
 
 .header-content {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     text-align: left;
 }
@@ -243,60 +221,56 @@ nav button:hover {
     margin-right: 80%;
 }
 
-.exercise-Rear-Delt-Fly-Machine {
+section#exercises-RearDeltFlyMachine {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 160px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.RearDeltFlyMachine {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.RearDeltFlyMachine h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-RearDeltFlyMachine h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.RearDeltFlyMachine-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-RearDeltFlyMachine p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.RearDeltFlyMachine img {
+section#exercises-RearDeltFlyMachine img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Rear-Delt-Fly-Machine {
+section#exercises-RearDeltFlyMachine .button-view-details-RearDeltFlyMachine {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Rear-Delt-Fly-Machine:hover {
+section#exercises-RearDeltFlyMachine .button-view-details-RearDeltFlyMachine:hover {
     background-color: #079590;
 }
 
-.button-add-Rear-Delt-Fly-Machine {
+section#exercises-RearDeltFlyMachine .button-add-RearDeltFlyMachine {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -305,72 +279,65 @@ nav button:hover {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Rear-Delt-Fly-Machine:hover {
+section#exercises-RearDeltFlyMachine .button-add-RearDeltFlyMachine:hover {
     background-color: #079590;
 }
 
-.exercise-Lever-Gripless-Shrug {
+section#exercises-LeverGriplessShrug {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 150px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.LeverGriplessShrug {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.LeverGriplessShrug h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-LeverGriplessShrug h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.LeverGriplessShrug-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-LeverGriplessShrug p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.LeverGriplessShrug img {
+section#exercises-LeverGriplessShrug img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Lever-Gripless-Shrug {
+section#exercises-LeverGriplessShrug .button-view-details-LeverGriplessShrug {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Lever-Gripless-Shrug:hover {
+section#exercises-LeverGriplessShrug .button-view-details-LeverGriplessShrug:hover {
     background-color: #079590;
 }
 
-.button-add-Lever-Gripless-Shrug {
+section#exercises-LeverGriplessShrug .button-add-LeverGriplessShrug {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -379,72 +346,65 @@ nav button:hover {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Lever-Gripless-Shrug:hover {
+section#exercises-LeverGriplessShrug .button-add-LeverGriplessShrug:hover {
     background-color: #079590;
 }
 
-.exercise-Cable-Rear-Delt-Fly {
+section#exercises-CableRearDeltFly {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 170px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.CableRearDeltFly {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.CableRearDeltFly h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-CableRearDeltFly h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.CableRearDeltFly-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-CableRearDeltFly p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.CableRearDeltFly img {
+section#exercises-CableRearDeltFly img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Cable-Rear-Delt-Fly {
+section#exercises-CableRearDeltFly .button-view-details-CableRearDeltFly {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Cable-Rear-Delt-Fly:hover {
+section#exercises-CableRearDeltFly .button-view-details-CableRearDeltFly:hover {
     background-color: #079590;
 }
 
-.button-add-Cable-Rear-Delt-Fly {
+section#exercises-CableRearDeltFly .button-add-CableRearDeltFly {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -453,72 +413,65 @@ nav button:hover {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Cable-Rear-Delt-Fly:hover {
+section#exercises-CableRearDeltFly .button-add-CableRearDeltFly:hover {
     background-color: #079590;
 }
 
-.exercise-Bent-Over-Lateral-Raise {
+section#exercises-BentOverLateralRaise {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 150px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.BentOverLateralRaise {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.BentOverLateralRaise h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-BentOverLateralRaise h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.BentOverLateralRaise-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-BentOverLateralRaise p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.BentOverLateralRaise img {
+section#exercises-BentOverLateralRaise img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Bent-Over-Lateral-Raise {
+section#exercises-BentOverLateralRaise .button-view-details-BentOverLateralRaise {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -100px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Bent-Over-Lateral-Raise:hover {
+section#exercises-BentOverLateralRaise .button-view-details-BentOverLateralRaise:hover {
     background-color: #079590;
 }
 
-.button-add-Bent-Over-Lateral-Raise {
+section#exercises-BentOverLateralRaise .button-add-BentOverLateralRaise {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -527,72 +480,65 @@ nav button:hover {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -100px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Bent-Over-Lateral-Raise:hover {
+section#exercises-BentOverLateralRaise .button-add-BentOverLateralRaise:hover {
     background-color: #079590;
 }
 
-.exercise-Cable-Upright-Row {
+section#exercises-CableUprightRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 150px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.CableUprightRow {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.CableUprightRow h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-CableUprightRow h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.CableUprightRow-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-CableUprightRow p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.CableUprightRow img {
+section#exercises-CableUprightRow img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Cable-Upright-Row {
+section#exercises-CableUprightRow .button-view-details-CableUprightRow {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Cable-Upright-Row:hover {
+section#exercises-CableUprightRow .button-view-details-CableUprightRow:hover {
     background-color: #079590;
 }
 
-.button-add-Cable-Upright-Row {
+section#exercises-CableUprightRow .button-add-CableUprightRow {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -601,72 +547,65 @@ nav button:hover {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Cable-Upright-Row:hover {
+section#exercises-CableUprightRow .button-add-CableUprightRow:hover {
     background-color: #079590;
 }
 
-.exercise-Face-Pull {
+section#exercises-FacePull {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 150px;
     border-bottom: 2px solid #f0f0f0;
-    height: 190px;
+    height: 256px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.FacePull {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.FacePull h1 {
-    font-size: 28px;
-    font-weight: 300;
+section#exercises-FacePull h1 {
+    font-size: 30px;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
-.FacePull-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
+section#exercises-FacePull p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.FacePull img {
+section#exercises-FacePull img {
     width: 200px;
     height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
+    margin: 10px 0 0 10px;
 }
 
-.button-view-details-Face-Pull {
+section#exercises-FacePull .button-view-details-FacePull {
     background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
     color: white;
+    font-family: 'Poppins', sans-serif;
     width: 182px;
     height: 60px;
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
+    border: none;
     font-weight: 600;
+    margin: 10px;
 }
 
-.button-view-details-Face-Pull:hover {
+section#exercises-FacePull .button-view-details-FacePull:hover {
     background-color: #079590;
 }
 
-.button-add-Face-Pull {
+section#exercises-FacePull .button-add-FacePull {
     background-color: #4caf50;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -675,311 +614,12 @@ nav button:hover {
     font-size: 20px;
     border-radius: 10px;
     padding: 9px 16px;
-    border: none;
     cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
+    border: none;
     font-weight: 600;
 }
 
-.button-add-Face-Pull:hover {
-    background-color: #079590;
-}
-
-.exercise-Half-Kneeling-High-Cable-Row-Rope {
-    border-bottom: 2px solid #f0f0f0;
-    height: 190px;
-}
-
-.HalfKneelingHighCableRowRope {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.HalfKneelingHighCableRowRope h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
-}
-
-.HalfKneelingHighCableRowRope-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.HalfKneelingHighCableRowRope img {
-    width: 200px;
-    height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
-}
-
-.button-view-details-Half-Kneeling-High-Cable-Row-Rope {
-    background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
-    font-weight: 600;
-}
-
-.button-view-details-Half-Kneeling-High-Cable-Row-Rope:hover {
-    background-color: #079590;
-}
-
-.button-add-Half-Kneeling-High-Cable-Row-Rope {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
-    font-weight: 600;
-}
-
-.button-add-Half-Kneeling-High-Cable-Row-Rope:hover {
-    background-color: #079590;
-}
-
-.exercise-Dumbbell-Raise {
-    border-bottom: 2px solid #f0f0f0;
-    height: 190px;
-}
-
-.DumbbelRaise {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.DumbbelRaise h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
-}
-
-.DumbbellRaise-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.DumbbelRaise img {
-    width: 200px;
-    height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
-}
-
-.button-view-details-Dumbbell-Raise {
-    background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
-    font-weight: 600;
-}
-
-.button-view-details-Dumbbell-Raise:hover {
-    background-color: #079590;
-}
-
-.button-add-Dumbbell-Raise {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
-    font-weight: 600;
-}
-
-.button-add-Dumbbell-Raise:hover {
-    background-color: #079590;
-}
-
-.exercise-Dumbbell-Upright-Row {
-    border-bottom: 2px solid #f0f0f0;
-    height: 190px;
-}
-
-.DumbbellUprightRow {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.DumbbellUprightRow h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
-}
-
-.DumbbellUprightRow-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.DumbbellUprightRow img {
-    width: 200px;
-    height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
-}
-
-.button-view-details-Dumbbell-Upright-Row {
-    background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
-    font-weight: 600;
-}
-
-.button-view-details-Dumbbell-Upright-Row:hover {
-    background-color: #079590;
-}
-
-.button-add-Dumbbell-Upright-Row {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
-    font-weight: 600;
-}
-
-.button-add-Dumbbell-Upright-Row:hover {
-    background-color: #079590;
-}
-
-.exercise-Bodyweight-Military-Press {
-    border-bottom: 2px solid #f0f0f0;
-    height: 190px;
-}
-
-.BodyweightMilitaryPress {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.BodyweightMilitaryPress h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 100px;
-}
-
-.BodyweightMilitaryPress-equipment {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.BodyweightMilitaryPress img {
-    width: 200px;
-    height: 200px;
-    margin-top: -150px;
-    margin-left: 700px;
-}
-
-.button-view-details-Bodyweight-Military-Press {
-    background-color: #cb1313;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: absolute;
-    font-weight: 600;
-}
-
-.button-view-details-Bodyweight-Military-Press:hover {
-    background-color: #079590;
-}
-
-.button-add-Bodyweight-Military-Press {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 310px;
-    margin-top: -70px;
-    font-weight: 600;
-}
-
-.button-add-Bodyweight-Military-Press:hover {
+section#exercises-FacePull .button-add-FacePull:hover {
     background-color: #079590;
 }
 
