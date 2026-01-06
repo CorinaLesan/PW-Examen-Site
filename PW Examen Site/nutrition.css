@@ -707,37 +707,27 @@ nav button:hover {
     background-color: #45a049;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .stats-container,
-    .macros-container {
-        grid-template-columns: 1fr;
-    }
-
-    .meals-container {
-        grid-template-columns: 1fr;
-    }
-
-    .meal-plan-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.footer {
+    background: #2a2a2a;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 100px;
 }
 
-@media (max-width: 768px) {
-    .page-title {
-        font-size: 32px;
-    }
+.footer-info {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
 
-    .section-header {
-        flex-direction: column;
-        gap: 15px;
-    }
+.footer-info p {
+    margin: 25px 0;
+}
 
-    .database-categories {
-        justify-content: center;
-    }
-
-    .meal-plan-grid {
-        grid-template-columns: 1fr;
-    }
+.footer-info .info {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 25px;
 }

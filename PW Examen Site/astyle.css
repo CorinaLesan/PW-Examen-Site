@@ -310,6 +310,30 @@ main {
     background-color: #079590;
 }
 
+.footer {
+    background: linear-gradient(90deg, #000000, #ffffff);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-info {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.footer-info p {
+    margin: 25px 0;
+}
+
+.footer-info .info {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 25px;
+}
+
 @media (max-width: 1200px) {
     .nav-links {
         gap: 30px;
