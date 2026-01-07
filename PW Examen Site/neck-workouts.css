@@ -637,6 +637,290 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
     margin-top: 25px;
 }
 
+/* Скрываем чекбоксы */
+.menu-checkbox,
+.submenu-checkbox {
+    display: none;
+}
+
+/* Стили для гамбургер-меню */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    position: relative;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+/* Оверлей для меню */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+/* Стрелки для подменю на мобильных */
+.dropdown-label,
+.dropdown > a {
+    position: relative;
+    cursor: pointer;
+}
+
+.arrow {
+    display: none;
+    font-size: 12px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Десктопная версия (1025px и выше) */
+@media screen and (min-width: 1025px) {
+    .hamburger-menu,
+    .menu-overlay {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        padding: 0 !important;
+        background: none !important;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: absolute;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .drop-down-second:hover .drop-down-menu-second {
+        display: block;
+    }
+}
+
+/* ПЛАНШЕТЫ и ТЕЛЕФОНЫ (до 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Показываем гамбургер и стрелки */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .arrow {
+        display: inline-block;
+    }
+
+    /* Основное меню - скрыто по умолчанию */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 80px 20px 20px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        gap: 0;
+        overflow-y: auto;
+    }
+
+    /* Когда чекбокс отмечен - показываем меню */
+    #menu-toggle:checked ~ .nav-links {
+        right: 0;
+    }
+
+    #menu-toggle:checked ~ .menu-overlay {
+        display: block;
+    }
+
+    /* Анимация гамбургера в крестик */
+    #menu-toggle:checked + .hamburger-menu span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    #menu-toggle:checked + .hamburger-menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .hamburger-menu span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* Стили для элементов меню */
+    .nav-links li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links > li {
+        margin-bottom: 10px;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    /* Кнопка LOGIN / REGISTER */
+    .nav-button button {
+        width: 100%;
+        margin-top: 10px;
+        border: 2px solid #000;
+        background-color: white;
+        color: #333;
+    }
+
+    .nav-button button a {
+        border-bottom: none;
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+
+    /* Выпадающие меню - скрыты по умолчанию */
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: static;
+        display: none;
+        width: 100%;
+        padding: 0;
+        background-color: #f9f9f9;
+        margin-top: 5px;
+        margin-left: 15px;
+        border-left: 3px solid #ff0000;
+    }
+
+    /* Когда чекбокс подменю отмечен - показываем */
+    #workouts-toggle:checked ~ .dropdown-menu,
+    #calculator-toggle:checked ~ .drop-down-menu-second {
+        display: block;
+    }
+
+    /* Поворачиваем стрелку при открытии */
+    #workouts-toggle:checked + .dropdown-label .arrow,
+    #calculator-toggle:checked + .dropdown-label .arrow {
+        transform: rotate(180deg);
+    }
+
+    /* Стили для ссылок в подменю */
+    .dropdown-menu li,
+    .drop-down-menu-second li {
+        border-bottom: none;
+    }
+
+    .dropdown-menu a,
+    .drop-down-menu-second a {
+        padding: 10px 25px;
+        font-size: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Стили для лейблов подменю */
+    .dropdown-label {
+        display: block;
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #333;
+        border-bottom: 1px solid #f0f0f0;
+        cursor: pointer;
+    }
+
+    .dropdown-label:hover {
+        color: #ff0000;
+    }
+
+    /* Убираем стандартные ссылки для WORKOUTS и CALCULATOR */
+    .dropdown > a,
+    .drop-down-second > a {
+        display: none;
+    }
+}
+
+/* ТЕЛЕФОНЫ (до 768px) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        width: 280px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .dropdown-label {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media screen and (max-width: 480px) {
+    .nav-links {
+        width: 100%;
+        right: -100%;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        right: 0;
+    }
+}
+
+/* Анимация при наведении для десктопа */
+@media screen and (min-width: 1025px) {
+    .nav-links a:hover {
+        color: #ff0000;
+    }
+
+    nav button:hover {
+        background-color: #fffb00;
+        color: white;
+    }
+
+    .dropdown-menu a:hover,
+    .drop-down-menu-second a:hover {
+        background-color: #f5f5f5;
+        color: #ff0000;
+        padding-left: 25px;
+    }
+}
+
 /* ПЛАНШЕТЫ (до 1024px) */
 @media screen and (max-width: 1024px) {
     .nav-container {
