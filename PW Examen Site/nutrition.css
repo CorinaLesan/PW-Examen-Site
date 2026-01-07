@@ -731,3 +731,16 @@ nav button:hover {
     color: #ffffff;
     margin-top: 25px;
 }
+
+@media (max-width: 576px) {
+    .block {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .block {
+        width: 80%;
+    }
+}
