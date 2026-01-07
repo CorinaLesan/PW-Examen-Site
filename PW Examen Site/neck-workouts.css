@@ -1,3 +1,6 @@
+/* ============================= */
+/* ОБЩИЕ СТИЛИ */
+/* ============================= */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +15,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* ============================= */
+/* НАВИГАЦИЯ - ОБЩИЕ СТИЛИ */
+/* ============================= */
 nav {
     background-color: #fff;
     padding: 15px 0;
@@ -26,6 +32,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
+    position: relative;
 }
 
 .logo {
@@ -37,8 +44,12 @@ nav {
     letter-spacing: 5px;
     text-decoration: none;
     display: inline-block;
+    z-index: 1002;
 }
 
+/* ============================= */
+/* НАВИГАЦИЯ ДЛЯ ДЕСКТОПА */
+/* ============================= */
 .nav-links {
     display: flex;
     gap: 155px;
@@ -77,6 +88,16 @@ nav button:hover {
     color: white;
 }
 
+/* Скрываем мобильные элементы на десктопе */
+.menu-toggle,
+.dropdown-toggle,
+.menu-btn,
+.dropdown-label,
+.nav-login-btn {
+    display: none;
+}
+
+/* Десктопные выпадающие меню */
 .dropdown,
 .drop-down-second {
     position: relative;
@@ -128,6 +149,9 @@ nav button:hover {
     transform: translateY(0);
 }
 
+/* ============================= */
+/* ОСНОВНОЙ КОНТЕНТ */
+/* ============================= */
 .page-header {
     background-color: #2a2a2a;
     color: white;
@@ -156,6 +180,7 @@ nav button:hover {
     margin-right: 80%;
 }
 
+/* Стили для упражнений (оставляем ваши существующие) */
 section#exercises-WeightedLateralNeckFlexion {
     display: flex;
     justify-content: space-around;
@@ -166,400 +191,11 @@ section#exercises-WeightedLateralNeckFlexion {
     font-family: 'Poppins', sans-serif;
 }
 
-section#exercises-WeightedLateralNeckFlexion h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-}
+/* ... все ваши существующие стили для упражнений ... */
 
-section#exercises-WeightedLateralNeckFlexion p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-WeightedLateralNeckFlexion img {
-    width: 200px;
-    height: 200px;
-    margin: 10px 0 0 10px;
-}
-
-section#exercises-WeightedLateralNeckFlexion .button-view-details-Weighted-Lateral-Neck-Flexion {
-    background-color: #cb1313;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-    margin: 10px;
-}
-
-section#exercises-WeightedLateralNeckFlexion
-    .button-view-details-Weighted-Lateral-Neck-Flexion:hover {
-    background-color: #079590;
-}
-
-section#exercises-WeightedLateralNeckFlexion .button-add-Weighted-Lateral-Neck-Flexion {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-}
-
-section#exercises-WeightedLateralNeckFlexion .button-add-Weighted-Lateral-Neck-Flexion:hover {
-    background-color: #079590;
-}
-
-section#exercises-WeightedLyingNeckExtension {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 70px 170px;
-    border-bottom: 2px solid #f0f0f0;
-    height: 256px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-WeightedLyingNeckExtension h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-WeightedLyingNeckExtension p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-WeightedLyingNeckExtension img {
-    width: 200px;
-    height: 200px;
-    margin: 10px 0 0 10px;
-}
-
-section#exercises-WeightedLyingNeckExtension .button-view-details-Weighted-Lying-Neck-Extension {
-    background-color: #cb1313;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-    margin: 10px;
-}
-
-section#exercises-WeightedLyingNeckExtension
-    .button-view-details-Weighted-Lying-Neck-Extension:hover {
-    background-color: #079590;
-}
-
-section#exercises-WeightedLyingNeckExtension .button-add-Weighted-Lying-Neck-Extension {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-}
-
-section#exercises-WeightedLyingNeckExtension .button-add-Weighted-Lying-Neck-Extension:hover {
-    background-color: #079590;
-}
-
-section#exercises-WeightedLyingNeckFlexion {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 70px 170px;
-    border-bottom: 2px solid #f0f0f0;
-    height: 256px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-WeightedLyingNeckFlexion h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-WeightedLyingNeckFlexion p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-WeightedLyingNeckFlexion img {
-    width: 200px;
-    height: 200px;
-    margin: 10px 0 0 50px;
-}
-
-section#exercises-WeightedLyingNeckFlexion .button-view-details-Weighted-Lying-Neck-Flexion {
-    background-color: #cb1313;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-    margin: 10px;
-}
-
-section#exercises-WeightedLyingNeckFlexion .button-view-details-Weighted-Lying-Neck-Flexion:hover {
-    background-color: #079590;
-}
-
-section#exercises-WeightedLyingNeckFlexion .button-add-Weighted-Lying-Neck-Flexion {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-}
-
-section#exercises-WeightedLyingNeckFlexion .button-add-Weighted-Lying-Neck-Flexion:hover {
-    background-color: #079590;
-}
-
-section#exercises-GittlesonShrug {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 70px 140px;
-    border-bottom: 2px solid #f0f0f0;
-    height: 256px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-GittlesonShrug h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-GittlesonShrug p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-GittlesonShrug img {
-    width: 200px;
-    height: 200px;
-    margin: 10px 0 0 50px;
-}
-
-section#exercises-GittlesonShrug .button-view-details-GittlesonShrug {
-    background-color: #cb1313;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-    margin: 10px;
-}
-
-section#exercises-GittlesonShrug .button-view-details-GittlesonShrug:hover {
-    background-color: #079590;
-}
-
-section#exercises-GittlesonShrug .button-add-GittlesonShrug {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-}
-
-section#exercises-GittlesonShrug .button-add-GittlesonShrug:hover {
-    background-color: #079590;
-}
-
-section#exercises-DiagonalNeckStretch {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 70px 140px;
-    border-bottom: 2px solid #f0f0f0;
-    height: 256px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-DiagonalNeckStretch h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-DiagonalNeckStretch p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-DiagonalNeckStretch img {
-    width: 200px;
-    height: 200px;
-    margin: 10px 0 0 50px;
-}
-
-section#exercises-DiagonalNeckStretch .button-view-details-DiagonalNeckStretch {
-    background-color: #cb1313;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-    margin: 10px;
-}
-
-section#exercises-DiagonalNeckStretch .button-view-details-DiagonalNeckStretch:hover {
-    background-color: #079590;
-}
-
-section#exercises-DiagonalNeckStretch .button-add-DiagonalNeckStretch {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-}
-
-section#exercises-DiagonalNeckStretch .button-add-DiagonalNeckStretch:hover {
-    background-color: #079590;
-}
-
-section#exercises-NeckRotationStretch {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 70px 140px;
-    border-bottom: 2px solid #f0f0f0;
-    height: 256px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-NeckRotationStretch h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-NeckRotationStretch p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-    font-family: 'Poppins', sans-serif;
-}
-
-section#exercises-NeckRotationStretch img {
-    width: 200px;
-    height: 200px;
-    margin: 10px 0 0 50px;
-}
-
-section#exercises-NeckRotationStretch .button-view-details-NeckRotationStretch {
-    background-color: #cb1313;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    width: 182px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-    margin: 10px;
-}
-
-section#exercises-NeckRotationStretch .button-view-details-NeckRotationStretch:hover {
-    background-color: #079590;
-}
-
-section#exercises-NeckRotationStretch .button-add-NeckRotationStretch {
-    background-color: #4caf50;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    width: 102px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 9px 16px;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-}
-
-section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
-    background-color: #079590;
-}
-
+/* ============================= */
+/* ПАГИНАЦИЯ И ФУТЕР */
+/* ============================= */
 .pagination-section {
     padding: 40px 20px;
     background-color: #fff;
@@ -637,30 +273,25 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
     margin-top: 25px;
 }
 
+/* ============================= */
+/* МЕДИА-ЗАПРОСЫ ДЛЯ ПЛАНШЕТОВ (1024px и меньше) */
+/* ============================= */
 @media (max-width: 1024px) {
-    /* Навигация с гамбургер-меню на чистом CSS */
+    /* Навигация */
     .nav-container {
         padding: 0 20px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: relative;
     }
 
     .logo {
         font-size: 24px;
         padding: 8px 16px;
         letter-spacing: 3px;
-        z-index: 1002;
     }
 
-    /* Скрываем чекбокс */
-    .menu-toggle,
-    .dropdown-toggle {
-        display: none;
-    }
-
-    /* Кнопка гамбургер-меню */
+    /* Показываем гамбургер-меню */
     .menu-btn {
         display: block;
         width: 40px;
@@ -669,6 +300,8 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         cursor: pointer;
         z-index: 1002;
         padding: 10px;
+        background: none;
+        border: none;
     }
 
     .hamburger {
@@ -702,7 +335,7 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         bottom: -8px;
     }
 
-    /* Анимация гамбургера при активации */
+    /* Анимация гамбургера */
     #menu-toggle:checked ~ .menu-btn .hamburger {
         background-color: transparent;
     }
@@ -717,7 +350,13 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         bottom: 0;
     }
 
-    /* Скрываем стандартное меню */
+    /* Скрываем чекбоксы */
+    .menu-toggle,
+    .dropdown-toggle {
+        display: none;
+    }
+
+    /* Мобильное меню */
     .nav-links {
         position: fixed;
         top: 0;
@@ -737,7 +376,6 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Показываем меню при активации чекбокса */
     #menu-toggle:checked ~ .nav-links {
         left: 0;
     }
@@ -754,24 +392,21 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         margin-top: 20px;
     }
 
-    .nav-links a {
-        font-size: 16px;
-        padding: 15px 0;
-        display: block;
-        width: 100%;
+    /* Скрываем десктопные ссылки, показываем лейблы */
+    .desktop-link {
+        display: none;
     }
 
-    /* Стили для лейблов выпадающих меню */
     .dropdown-label {
+        display: block;
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
         color: #333;
         padding: 15px 0;
-        display: block;
-        width: 100%;
         cursor: pointer;
         position: relative;
+        width: 100%;
     }
 
     .dropdown-label::after {
@@ -782,7 +417,7 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         transition: transform 0.3s;
     }
 
-    /* Выпадающие меню */
+    /* Выпадающие меню на мобильных */
     .dropdown-menu,
     .drop-down-menu-second {
         display: none;
@@ -793,15 +428,14 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         position: static;
         box-shadow: none;
         border-radius: 0;
+        border-top: 1px solid #e0e0e0;
     }
 
-    /* Показываем выпадающее меню при активации чекбокса */
     #dropdown-toggle-1:checked ~ .dropdown-menu,
     #dropdown-toggle-2:checked ~ .drop-down-menu-second {
         display: block;
     }
 
-    /* Анимация стрелки */
     #dropdown-toggle-1:checked ~ .dropdown-label::after,
     #dropdown-toggle-2:checked ~ .dropdown-label::after {
         transform: rotate(180deg);
@@ -812,7 +446,6 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         padding: 12px 20px;
         font-size: 14px;
         border-bottom: 1px solid #e0e0e0;
-        color: #333;
     }
 
     .dropdown-menu li:last-child a,
@@ -820,13 +453,13 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         border-bottom: none;
     }
 
-    /* Кнопка входа */
+    /* Кнопка входа на мобильных */
     .nav-btn-item {
         width: 100%;
-        margin-top: 20px;
     }
 
     .nav-login-btn {
+        display: block;
         width: 100%;
         background-color: #ff0000;
         color: white;
@@ -836,23 +469,12 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .nav-login-btn:hover {
-        background-color: #d32f2f;
+        margin-top: 10px;
     }
 
     .nav-login-btn a {
         color: white;
         text-decoration: none;
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Оверлей для фона при открытом меню */
-    #menu-toggle:checked ~ .nav-overlay {
         display: block;
     }
 
@@ -871,7 +493,7 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         max-width: 100%;
     }
 
-    /* Упражнения */
+    /* Упражнения для планшетов */
     [id^='exercises-'] {
         padding: 40px 30px !important;
         height: auto !important;
@@ -903,7 +525,6 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         margin-bottom: 15px !important;
     }
 
-    /* Кнопки упражнений */
     [id^='exercises-'] .button-view-details,
     [id^='exercises-'] .button-add {
         width: 170px !important;
@@ -921,7 +542,7 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
 }
 
 /* =============================== */
-/* МЕДИА-ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ */
+/* МЕДИА-ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ (768px и меньше) */
 /* =============================== */
 @media (max-width: 768px) {
     .nav-container {
@@ -1015,5 +636,64 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         width: 150px !important;
         height: 42px !important;
         font-size: 14px !important;
+    }
+
+    .footer-info {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .footer-info .info {
+        font-size: 14px;
+    }
+}
+
+/* =============================== */
+/* ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (480px и меньше) */
+/* =============================== */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        width: 90%;
+        padding: 65px 12px 20px;
+    }
+
+    .nav-links a,
+    .dropdown-label {
+        font-size: 14px;
+    }
+
+    .dropdown-menu a,
+    .drop-down-menu-second a {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    [id^='exercises-'] {
+        padding: 20px 10px !important;
+    }
+
+    [id^='exercises-'] img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    [id^='exercises-'] h1 {
+        font-size: 20px !important;
+    }
+
+    [id^='exercises-'] .button-view-details,
+    [id^='exercises-'] .button-add {
+        width: 130px !important;
+        height: 40px !important;
+        font-size: 13px !important;
     }
 }
