@@ -638,31 +638,155 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
 }
 
 @media (max-width: 1024px) {
-    /* Навигация */
+    /* Навигация с гамбургер-меню */
     .nav-container {
         padding: 0 20px;
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
     }
 
+    .logo {
+        font-size: 24px;
+        padding: 8px 16px;
+        letter-spacing: 3px;
+        z-index: 1001;
+    }
+
+    /* Скрываем стандартное меню */
     .nav-links {
-        gap: 40px;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 80px;
+        gap: 20px;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links > li {
+        width: 80%;
+        text-align: center;
+        margin: 0;
     }
 
     .nav-links a {
-        font-size: 16px;
+        font-size: 18px;
+        padding: 15px 20px;
+        display: block;
+        border-bottom: 1px solid #f0f0f0;
     }
 
-    nav button {
-        padding: 10px 18px;
+    /* Кнопка входа */
+    .nav-links button {
+        width: 80%;
+        margin-top: 20px;
+        order: 0;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        padding: 15px;
         font-size: 18px;
+    }
+
+    .nav-links button a {
+        color: white;
+        text-decoration: none;
+        border: none;
+    }
+
+    /* Выпадающие меню для планшетов */
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        background-color: #f9f9f9;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .dropdown.active .dropdown-menu,
+    .drop-down-second.active .drop-down-menu-second {
+        display: block;
+    }
+
+    .dropdown-menu a,
+    .drop-down-menu-second a {
+        padding: 12px 40px;
+        font-size: 16px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* Гамбургер-меню кнопка */
+    .menu-toggle {
+        display: block !important;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1001;
+    }
+
+    .hamburger {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger::before {
+        top: -8px;
+    }
+
+    .hamburger::after {
+        bottom: -8px;
+    }
+
+    .menu-toggle.active .hamburger {
+        background-color: transparent;
+    }
+
+    .menu-toggle.active .hamburger::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .menu-toggle.active .hamburger::after {
+        transform: rotate(-45deg);
+        bottom: 0;
     }
 
     /* Заголовок страницы */
     .page-header {
         padding: 40px 20px;
+        margin-top: 60px;
     }
 
     .page-title {
@@ -675,62 +799,46 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         max-width: 80%;
     }
 
-    /* Упражнения - общие стили */
+    /* Упражнения */
     [id^='exercises-'] {
-        padding: 40px 60px !important;
+        padding: 40px 30px !important;
         height: auto !important;
-        min-height: 200px;
+        min-height: 180px;
+        flex-wrap: wrap;
+        justify-content: center !important;
     }
 
-    /* Изображения упражнений */
-    [id^='exercises-'] img {
-        width: 150px !important;
-        height: 150px !important;
-        margin: 0 20px !important;
-    }
-
-    /* Заголовки упражнений */
-    [id^='exercises-'] h1 {
-        font-size: 24px !important;
+    [id^='exercises-'] .exercise {
+        flex: 1 1 300px;
+        margin-bottom: 15px;
         text-align: center;
     }
 
-    /* Текст упражнений */
+    [id^='exercises-'] img {
+        width: 120px !important;
+        height: 120px !important;
+        margin: 10px auto !important;
+        display: block;
+    }
+
+    [id^='exercises-'] h1 {
+        font-size: 20px !important;
+        margin-bottom: 8px !important;
+    }
+
     [id^='exercises-'] p {
         font-size: 14px !important;
-        max-width: 300px !important;
-        text-align: center;
+        max-width: 100% !important;
+        margin-bottom: 10px !important;
     }
 
     /* Кнопки упражнений */
     [id^='exercises-'] .button-view-details,
     [id^='exercises-'] .button-add {
-        width: 140px !important;
-        height: 50px !important;
-        font-size: 16px !important;
-        padding: 8px 12px !important;
+        width: 160px !important;
+        height: 45px !important;
+        font-size: 15px !important;
         margin: 5px !important;
-    }
-
-    /* Пагинация */
-    .pagination-section {
-        padding: 30px 20px;
-    }
-
-    .pagination a {
-        min-width: 28px;
-        height: 28px;
-        font-size: 13px;
-    }
-
-    /* Футер */
-    .footer-info {
-        font-size: 18px;
-        padding: 15px;
-    }
-
-    .footer-info .info {
-        font-size: 14px;
     }
 }
 
@@ -744,66 +852,50 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
     }
 
     .logo {
-        font-size: 22px;
+        font-size: 20px;
         padding: 8px 15px;
-        letter-spacing: 3px;
     }
 
-    .nav-links {
-        gap: 15px;
-        width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    .menu-toggle {
+        padding: 8px;
     }
 
-    .nav-links > li {
-        flex: 1;
-        min-width: 100px;
-        text-align: center;
+    .hamburger {
+        width: 22px;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        width: 22px;
+    }
+
+    .hamburger::before {
+        top: -7px;
+    }
+
+    .hamburger::after {
+        bottom: -7px;
     }
 
     .nav-links a {
-        font-size: 12px;
-        letter-spacing: 0.5px;
-    }
-
-    nav button {
-        width: 100%;
-        margin-top: 10px;
-        order: 5;
         font-size: 16px;
-        padding: 10px;
+        padding: 15px;
     }
 
-    /* Выпадающие меню */
-    .dropdown-menu,
-    .drop-down-menu-second {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        display: none;
-        box-shadow: none;
-        padding: 10px;
-        background-color: #f9f9f9;
-        margin-top: 10px;
-        border-radius: 8px;
-        width: 100%;
-    }
-
-    .dropdown:hover .dropdown-menu,
-    .drop-down-second:hover .drop-down-menu-second {
-        display: block;
+    .nav-links button {
+        width: 85%;
+        padding: 12px;
+        font-size: 16px;
     }
 
     /* Заголовок страницы */
     .page-header {
         padding: 30px 15px;
+        margin-top: 50px;
     }
 
     .page-title {
         font-size: 28px;
-        letter-spacing: 1px;
     }
 
     .page-subtitle {
@@ -811,86 +903,50 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
         max-width: 100%;
     }
 
-    /* Контейнеры упражнений - карточки */
+    /* Упражнения - мобильная версия */
     [id^='exercises-'] {
+        padding: 25px 15px !important;
         flex-direction: column !important;
-        padding: 30px 20px !important;
-        gap: 20px !important;
-        text-align: center !important;
+        gap: 15px !important;
     }
 
-    /* Изображения упражнений */
+    [id^='exercises-'] .exercise {
+        width: 100%;
+        flex: none;
+    }
+
     [id^='exercises-'] img {
-        width: 120px !important;
-        height: 120px !important;
-        margin: 0 !important;
+        width: 150px !important;
+        height: 150px !important;
+        margin: 0 auto 15px !important;
     }
 
-    /* Заголовки упражнений */
     [id^='exercises-'] h1 {
-        font-size: 20px !important;
-        margin-bottom: 5px !important;
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
     }
 
-    /* Текст упражнений */
     [id^='exercises-'] p {
-        font-size: 13px !important;
-        max-width: 100% !important;
-        line-height: 1.4 !important;
-        margin: 5px 0 !important;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
     }
 
-    /* Контейнер кнопок */
+    /* Контейнер для кнопок */
     [id^='exercises-'] .exercise:last-child {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         gap: 10px;
-        width: 100%;
-        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 15px;
     }
 
-    /* Кнопки упражнений */
+    /* Кнопки */
     [id^='exercises-'] .button-view-details,
     [id^='exercises-'] .button-add {
-        width: 90% !important;
-        height: 45px !important;
-        font-size: 15px !important;
-        padding: 10px !important;
+        width: 140px !important;
+        height: 40px !important;
+        font-size: 14px !important;
         margin: 0 !important;
-        max-width: 250px;
-    }
-
-    /* Пагинация */
-    .pagination-section {
-        padding: 20px 15px;
-    }
-
-    .pagination {
-        gap: 3px;
-    }
-
-    .pagination a {
-        min-width: 32px;
-        height: 32px;
-        font-size: 14px;
-    }
-
-    /* Футер */
-    .footer {
-        padding: 10px 0;
-    }
-
-    .footer-info {
-        font-size: 14px;
-        padding: 15px 10px;
-    }
-
-    .footer-info p {
-        margin: 15px 0;
-    }
-
-    .footer-info .info {
-        font-size: 12px;
-        margin-top: 15px;
     }
 }
