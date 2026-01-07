@@ -732,15 +732,422 @@ nav button:hover {
     margin-top: 25px;
 }
 
-@media (max-width: 576px) {
-    .block {
+@media (max-width: 1024px) {
+    /* Навигация для планшетов */
+    .nav-container {
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    nav button {
+        padding: 10px 18px;
+        font-size: 18px;
+    }
+
+    /* Заголовок страницы */
+    .page-header {
+        padding: 40px 20px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .page-subtitle {
+        font-size: 14px;
+        margin-right: 0;
+        max-width: 80%;
+    }
+
+    /* Дневная статистика */
+    .daily-stats,
+    .macros-section,
+    .tabs-section,
+    .content-section {
+        padding: 20px;
+    }
+
+    .stats-container {
+        gap: 15px;
+    }
+
+    .stat-card {
+        padding: 20px 15px;
+    }
+
+    .stat-value {
+        font-size: 36px;
+    }
+
+    /* Макронутриенты */
+    .macros-container {
+        gap: 15px;
+    }
+
+    .macro-card {
+        padding: 20px 15px;
+    }
+
+    .macro-value {
+        font-size: 24px;
+    }
+
+    /* Табы */
+    .tabs-container {
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        flex: 1;
+        min-width: 140px;
+        text-align: center;
+    }
+
+    /* Today's Meals */
+    .meals-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .meal-section {
+        padding: 20px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    /* База данных еды */
+    .food-database-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .search-container input {
         width: 100%;
+        max-width: 300px;
+    }
+
+    .database-categories {
+        justify-content: center;
+    }
+
+    .category-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    /* Модальное окно */
+    .modal-content {
+        padding: 30px;
+        width: 95%;
+        max-width: 500px;
+    }
+
+    /* Футер */
+    .footer-info {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .footer-info .info {
         font-size: 14px;
     }
 }
 
+/* =============================== */
+/* МЕДИА-ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ */
+/* =============================== */
 @media (max-width: 768px) {
-    .block {
-        width: 80%;
+    /* Навигация для мобильных */
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+        padding: 8px 16px;
+        letter-spacing: 3px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .nav-links > li {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    nav button {
+        width: 100%;
+        margin-top: 10px;
+        order: 5;
+    }
+
+    /* Выпадающие меню для мобильных */
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        display: none;
+        box-shadow: none;
+        padding: 10px;
+        background-color: #f9f9f9;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .drop-down-second:hover .drop-down-menu-second {
+        display: block;
+    }
+
+    .dropdown-menu li,
+    .drop-down-menu-second li {
+        margin-bottom: 5px;
+    }
+
+    /* Заголовок страницы */
+    .page-header {
+        padding: 30px 15px;
+    }
+
+    .page-title {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .page-subtitle {
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    /* Дневная статистика */
+    .daily-stats {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+    .stat-value {
+        font-size: 32px;
+    }
+
+    .progress-bar-container {
+        height: 25px;
+    }
+
+    /* Макронутриенты */
+    .macros-section {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .macros-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .macro-card {
+        padding: 20px;
+    }
+
+    /* Табы */
+    .tabs-section {
+        margin: 20px auto 0;
+        padding: 0 15px;
+    }
+
+    .tabs-container {
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    .tab-btn {
+        width: 100%;
+        margin-bottom: 5px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .tab-btn.active {
+        border-color: #d32f2f;
+        border-bottom: 3px solid #d32f2f;
+    }
+
+    /* Секции контента */
+    .content-section {
+        padding: 20px 15px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .add-btn {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Today's Meals */
+    .meals-container {
+        gap: 15px;
+    }
+
+    .meal-section {
+        padding: 15px;
+    }
+
+    .meal-section h3 {
+        font-size: 20px;
+    }
+
+    /* Элементы еды */
+    .food-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .food-info,
+    .food-calories,
+    .food-actions {
+        width: 100%;
+        text-align: center;
+    }
+
+    .food-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .food-actions button {
+        flex: 1;
+        margin-left: 0;
+    }
+
+    /* База данных еды */
+    .database-categories {
+        justify-content: center;
+    }
+
+    .category-btn {
+        flex: 1;
+        min-width: calc(33.333% - 10px);
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .food-database-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .database-food-card {
+        padding: 15px;
+    }
+
+    /* Поиск */
+    .search-container input {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    /* Модальное окно */
+    .modal-content {
+        padding: 20px 15px;
+        width: 95%;
+        margin: 10px;
+        max-height: 90vh;
+    }
+
+    .modal h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .modal-body input,
+    .modal-body select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .modal-btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .close {
+        font-size: 28px;
+        right: 15px;
+        top: 10px;
+    }
+
+    /* Футер */
+    .footer {
+        margin-top: 50px;
+        padding: 10px 0;
+    }
+
+    .footer-info {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .footer-info p {
+        margin: 15px 0;
+    }
+
+    .footer-info .info {
+        font-size: 12px;
     }
 }
