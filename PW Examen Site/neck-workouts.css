@@ -636,3 +636,289 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
     color: #ffffff;
     margin-top: 25px;
 }
+
+/* ПЛАНШЕТЫ (до 1024px) */
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 40px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 24px;
+        padding: 8px 15px;
+    }
+
+    nav button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .dropdown-menu,
+    .drop-down-menu-second {
+        min-width: 200px;
+    }
+
+    /* Упражнения */
+    section[id^='exercises-'] {
+        padding: 40px 30px !important;
+        height: auto !important;
+        flex-wrap: wrap;
+    }
+
+    section[id^='exercises-'] .exercise {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    section[id^='exercises-'] .exercise:nth-child(2) {
+        order: 1;
+    }
+
+    section[id^='exercises-'] .exercise:nth-child(1),
+    section[id^='exercises-'] .exercise:nth-child(3) {
+        order: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section[id^='exercises-'] h1 {
+        font-size: 24px !important;
+    }
+
+    section[id^='exercises-'] p {
+        font-size: 16px !important;
+    }
+
+    section[id^='exercises-'] img {
+        width: 150px !important;
+        height: 150px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Кнопки */
+    section[id^='exercises-'] button {
+        width: 150px !important;
+        height: 50px !important;
+        font-size: 16px !important;
+        margin: 5px !important;
+    }
+
+    section[id^='exercises-'] .button-view-details {
+        width: 150px !important;
+    }
+
+    section[id^='exercises-'] .button-add {
+        width: 80px !important;
+    }
+
+    /* Хедер */
+    .page-header {
+        padding: 40px 20px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .page-subtitle {
+        margin-right: 50%;
+    }
+
+    /* Пагинация */
+    .pagination-container {
+        padding: 20px;
+    }
+
+    /* Футер */
+    .footer-info {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .footer-info .info {
+        font-size: 14px;
+    }
+}
+
+/* ТЕЛЕФОНЫ (до 768px) */
+@media screen and (max-width: 768px) {
+    /* Навигация */
+    .nav-container {
+        padding: 0 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 20px;
+        padding: 6px 12px;
+        letter-spacing: 3px;
+        order: 1;
+    }
+
+    /* Гамбургер меню */
+    .nav-links {
+        display: none;
+        width: 100%;
+        order: 3;
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 0;
+        background-color: white;
+        border-top: 1px solid #eee;
+        margin-top: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        display: none;
+        width: 100%;
+        padding: 10px 0;
+        background-color: #f9f9f9;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .drop-down-second:hover .drop-down-menu-second {
+        display: block;
+    }
+
+    /* Кнопка меню */
+    .menu-toggle {
+        display: block;
+        order: 2;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    /* Хедер */
+    .page-header {
+        padding: 30px 15px;
+    }
+
+    .page-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .page-subtitle {
+        margin-right: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* Упражнения */
+    section[id^='exercises-'] {
+        padding: 30px 15px !important;
+        flex-direction: column;
+    }
+
+    section[id^='exercises-'] .exercise {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    section[id^='exercises-'] .exercise:nth-child(1),
+    section[id^='exercises-'] .exercise:nth-child(2),
+    section[id^='exercises-'] .exercise:nth-child(3) {
+        order: 0;
+        display: block;
+        text-align: center;
+    }
+
+    section[id^='exercises-'] h1 {
+        font-size: 20px !important;
+        margin-bottom: 5px;
+    }
+
+    section[id^='exercises-'] p {
+        font-size: 14px !important;
+        margin-bottom: 10px;
+    }
+
+    section[id^='exercises-'] img {
+        width: 120px !important;
+        height: 120px !important;
+        margin: 10px auto !important;
+        display: block;
+    }
+
+    /* Кнопки */
+    section[id^='exercises-'] .exercise:last-child {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    section[id^='exercises-'] button {
+        width: 140px !important;
+        height: 45px !important;
+        font-size: 14px !important;
+        margin: 5px !important;
+    }
+
+    section[id^='exercises-'] .button-view-details {
+        width: 140px !important;
+    }
+
+    section[id^='exercises-'] .button-add {
+        width: 70px !important;
+    }
+
+    /* Пагинация */
+    .pagination-section {
+        padding: 20px 10px;
+    }
+
+    .pagination a {
+        min-width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    /* Футер */
+    .footer {
+        padding: 10px 0;
+    }
+
+    .footer-info {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .footer-info p {
+        margin: 15px 0;
+    }
+
+    .footer-info .info {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}
