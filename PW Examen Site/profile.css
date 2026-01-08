@@ -782,3 +782,410 @@ input:checked + .slider:before {
     color: #ffffff;
     margin-top: 25px;
 }
+
+/* ПЛАНШЕТЫ (768px - 1024px) */
+/* ==================== */
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 80px;
+    }
+
+    .logo {
+        font-size: 24px;
+        padding: 8px 16px;
+        letter-spacing: 3px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    nav button {
+        padding: 10px 18px;
+        font-size: 18px;
+    }
+
+    .profile-main {
+        padding: 30px 20px;
+    }
+
+    .profile-container {
+        padding: 30px;
+    }
+
+    .profile-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .profile-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .avatar-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .avatar-info h3 {
+        font-size: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .progress-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .progress-value {
+        font-size: 24px;
+    }
+
+    .footer-info {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/* ==================== */
+/* СМАРТФОНЫ (до 767px) */
+/* ==================== */
+@media screen and (max-width: 767px) {
+    .nav-container {
+        padding: 0 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+        padding: 8px 14px;
+        letter-spacing: 2px;
+        margin-top: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        display: block;
+        padding: 12px 0;
+    }
+
+    nav button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    /* Выпадающие меню для мобильных */
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        display: none;
+        background-color: #f8f8f8;
+        margin-top: 5px;
+        border-radius: 5px;
+        padding: 5px 0;
+        min-width: auto;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .drop-down-second:hover .drop-down-menu-second {
+        display: block;
+    }
+
+    .dropdown-menu a,
+    .drop-down-menu-second a {
+        padding: 10px 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .dropdown-menu a:hover,
+    .drop-down-menu-second a:hover {
+        padding-left: 20px;
+    }
+
+    /* Основной контент профиля */
+    .profile-main {
+        padding: 20px 15px;
+    }
+
+    .profile-container {
+        padding: 25px 20px;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .profile-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+    }
+
+    .profile-title::after {
+        width: 70px;
+        height: 3px;
+    }
+
+    .profile-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Левая колонка */
+    .profile-left {
+        gap: 25px;
+    }
+
+    .avatar-section {
+        padding: 20px;
+    }
+
+    .avatar-container {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+        border-width: 4px;
+    }
+
+    .upload-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .upload-icon {
+        font-size: 20px;
+    }
+
+    .avatar-info h3 {
+        font-size: 20px;
+    }
+
+    .avatar-info p {
+        font-size: 13px;
+    }
+
+    .member-since {
+        font-size: 11px;
+    }
+
+    .remove-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    /* Секция настроек */
+    .settings-section {
+        padding: 20px;
+    }
+
+    .settings-section h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .settings-list {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .setting-item {
+        padding-bottom: 12px;
+    }
+
+    .setting-item span {
+        font-size: 14px;
+    }
+
+    .setting-item select {
+        padding: 6px 10px;
+        font-size: 13px;
+        width: 130px;
+    }
+
+    /* Переключатели */
+    .switch {
+        width: 45px;
+        height: 22px;
+    }
+
+    .slider:before {
+        height: 14px;
+        width: 14px;
+        left: 4px;
+        bottom: 4px;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(23px);
+    }
+
+    .save-settings-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    /* Правая колонка */
+    .profile-right {
+        gap: 25px;
+    }
+
+    .personal-data-section,
+    .progress-section {
+        padding: 20px;
+    }
+
+    .personal-data-section h3,
+    .progress-section h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .unit {
+        right: 12px;
+        font-size: 13px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .cancel-btn,
+    .save-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    /* Секция прогресса */
+    .progress-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .progress-card {
+        padding: 15px;
+    }
+
+    .progress-card h4 {
+        font-size: 15px;
+    }
+
+    .progress-value {
+        font-size: 22px;
+    }
+
+    .progress-status {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+
+    /* Модальное окно */
+    .modal-content {
+        padding: 20px 15px;
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .modal-content h3 {
+        font-size: 20px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-btn {
+        width: 100%;
+        padding: 10px;
+        min-width: auto;
+    }
+
+    /* Уведомление */
+    .notification {
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        padding: 12px 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Футер */
+    .footer {
+        padding: 10px 0;
+    }
+
+    .footer-info {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .footer-info p {
+        margin: 15px 0;
+    }
+
+    .footer-info .info {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
