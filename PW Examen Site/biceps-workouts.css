@@ -711,3 +711,293 @@ section#exercises-CrossBodyHammerCurl .button-add-CrossBodyHammerCurl:hover {
     color: #ffffff;
     margin-top: 25px;
 }
+
+/* Планшеты (ширина до 1024px) */
+@media (max-width: 1024px) {
+    .nav-container {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .nav-links {
+        gap: 50px;
+    }
+
+    .logo {
+        font-size: 24px;
+        padding: 8px 15px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    nav button {
+        padding: 8px 16px;
+        font-size: 18px;
+    }
+
+    .page-header {
+        padding: 40px 20px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .page-subtitle {
+        margin-right: 50%;
+        font-size: 14px;
+    }
+
+    /* Адаптация всех секций упражнений для планшетов */
+    section#exercises-HammerCurl,
+    section#exercises-DumbbellInclineCurl,
+    section#exercises-EZBarbellCurl,
+    section#exercises-BarbellCurl,
+    section#exercises-PreacherCurl,
+    section#exercises-CrossBodyHammerCurl {
+        padding: 50px 40px !important;
+        height: auto !important;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    section#exercises-HammerCurl h1,
+    section#exercises-DumbbellInclineCurl h1,
+    section#exercises-EZBarbellCurl h1,
+    section#exercises-BarbellCurl h1,
+    section#exercises-PreacherCurl h1,
+    section#exercises-CrossBodyHammerCurl h1 {
+        font-size: 26px !important;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    section#exercises-HammerCurl p,
+    section#exercises-DumbbellInclineCurl p,
+    section#exercises-EZBarbellCurl p,
+    section#exercises-BarbellCurl p,
+    section#exercises-PreacherCurl p,
+    section#exercises-CrossBodyHammerCurl p {
+        font-size: 16px !important;
+        margin: 15px 0;
+        max-width: 100% !important;
+    }
+
+    section#exercises-HammerCurl img,
+    section#exercises-DumbbellInclineCurl img,
+    section#exercises-EZBarbellCurl img,
+    section#exercises-BarbellCurl img,
+    section#exercises-PreacherCurl img,
+    section#exercises-CrossBodyHammerCurl img {
+        width: 180px !important;
+        height: 180px !important;
+        margin: 0 auto !important;
+    }
+
+    .button-view-details-HammerCurl,
+    .button-add-HammerCurl,
+    .button-view-details-DumbbellInclineCurl,
+    .button-add-DumbbellInclineCurl,
+    .button-view-details-EZBarbellCurl,
+    .button-add-EZBarbellCurl,
+    .button-view-details-BarbellCurl,
+    .button-add-BarbellCurl,
+    .button-view-details-PreacherCurl,
+    .button-add-PreacherCurl,
+    .button-view-details-CrossBodyHammerCurl,
+    .button-add-CrossBodyHammerCurl {
+        width: 160px !important;
+        height: 50px !important;
+        font-size: 18px !important;
+        margin: 8px !important;
+        padding: 8px 12px !important;
+    }
+
+    .footer-info {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/* Мобильные устройства (ширина до 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        padding: 6px 12px;
+        letter-spacing: 3px;
+        align-self: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        display: block;
+        padding: 10px 0;
+    }
+
+    nav button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px;
+        font-size: 20px;
+    }
+
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        display: none;
+        background-color: #f9f9f9;
+        margin-top: 5px;
+        min-width: 100%;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .drop-down-second:hover .drop-down-menu-second {
+        display: block;
+    }
+
+    .dropdown-menu a,
+    .drop-down-menu-second a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .page-header {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .header-content {
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .page-subtitle {
+        font-size: 14px;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Адаптация всех секций упражнений для мобильных */
+    section#exercises-HammerCurl,
+    section#exercises-DumbbellInclineCurl,
+    section#exercises-EZBarbellCurl,
+    section#exercises-BarbellCurl,
+    section#exercises-PreacherCurl,
+    section#exercises-CrossBodyHammerCurl {
+        padding: 30px 20px !important;
+        margin: 10px 0;
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    section#exercises-HammerCurl h1,
+    section#exercises-DumbbellInclineCurl h1,
+    section#exercises-EZBarbellCurl h1,
+    section#exercises-BarbellCurl h1,
+    section#exercises-PreacherCurl h1,
+    section#exercises-CrossBodyHammerCurl h1 {
+        font-size: 22px !important;
+        margin-bottom: 15px;
+    }
+
+    section#exercises-HammerCurl p,
+    section#exercises-DumbbellInclineCurl p,
+    section#exercises-EZBarbellCurl p,
+    section#exercises-BarbellCurl p,
+    section#exercises-PreacherCurl p,
+    section#exercises-CrossBodyHammerCurl p {
+        font-size: 15px !important;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    section#exercises-HammerCurl img,
+    section#exercises-DumbbellInclineCurl img,
+    section#exercises-EZBarbellCurl img,
+    section#exercises-BarbellCurl img,
+    section#exercises-PreacherCurl img,
+    section#exercises-CrossBodyHammerCurl img {
+        width: 150px !important;
+        height: 150px !important;
+        margin: 0 auto 20px !important;
+    }
+
+    .button-view-details-HammerCurl,
+    .button-add-HammerCurl,
+    .button-view-details-DumbbellInclineCurl,
+    .button-add-DumbbellInclineCurl,
+    .button-view-details-EZBarbellCurl,
+    .button-add-EZBarbellCurl,
+    .button-view-details-BarbellCurl,
+    .button-add-BarbellCurl,
+    .button-view-details-PreacherCurl,
+    .button-add-PreacherCurl,
+    .button-view-details-CrossBodyHammerCurl,
+    .button-add-CrossBodyHammerCurl {
+        width: 100% !important;
+        margin: 5px 0 !important;
+        font-size: 16px !important;
+        padding: 12px !important;
+        height: auto !important;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pagination a {
+        min-width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .footer-info {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .footer-info p {
+        margin: 10px 0;
+    }
+
+    .footer-info .info {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
