@@ -334,11 +334,6 @@ main {
     margin-top: 25px;
 }
 
-/* Добавьте этот код в конец вашего файла astyle.css */
-
-/* ==================== */
-/* ПЛАНШЕТЫ (768px - 1024px) */
-/* ==================== */
 @media screen and (max-width: 1024px) {
     .nav-container {
         padding: 0 20px;
@@ -413,9 +408,6 @@ main {
     }
 }
 
-/* ==================== */
-/* СМАРТФОНЫ (до 767px) */
-/* ==================== */
 @media screen and (max-width: 767px) {
     body {
         background-attachment: fixed;
@@ -588,131 +580,5 @@ main {
     .footer-info .info {
         font-size: 14px;
         margin-top: 15px;
-    }
-}
-
-/* ==================== */
-/* ОЧЕНЬ МАЛЕНЬКИЕ ТЕЛЕФОНЫ (до 480px) */
-/* ==================== */
-@media screen and (max-width: 480px) {
-    .logo {
-        font-size: 20px;
-        padding: 6px 12px;
-    }
-
-    .nav-links a {
-        font-size: 15px;
-    }
-
-    nav button {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .grid-item {
-        padding: 15px 10px;
-    }
-
-    .exercise-illustration {
-        max-width: 200px;
-    }
-
-    .exercise-label {
-        font-size: 16px;
-    }
-
-    .text1,
-    .text-second,
-    .text-third {
-        font-size: 17px;
-    }
-
-    .description,
-    .description-second,
-    .description-third {
-        font-size: 13px;
-    }
-
-    .reg h1 {
-        font-size: 22px;
-    }
-
-    .reg p {
-        font-size: 14px;
-    }
-
-    .reg button {
-        font-size: 15px;
-    }
-
-    .footer-info {
-        font-size: 14px;
-    }
-
-    .footer-info .info {
-        font-size: 12px;
-    }
-}
-
-/* ==================== */
-/* ЛАНДШАФТНАЯ ОРИЕНТАЦИЯ */
-/* ==================== */
-@media screen and (max-width: 900px) and (orientation: landscape) {
-    .nav-links {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .nav-links li {
-        width: auto;
-    }
-
-    nav button {
-        width: auto;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .exercise-card-one,
-    .exercise-card-second,
-    .exercise-card-third {
-        flex-direction: row;
-        text-align: left;
-    }
-}
-
-/* ==================== */
-/* ТАБЛЕТЫ В ПОРТРЕТНОЙ ОРИЕНТАЦИИ */
-/* ==================== */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .nav-links {
-        gap: 60px;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    .exercise-card-one,
-    .exercise-card-second,
-    .exercise-card-third {
-        max-width: 600px;
-    }
-}
-
-/* ==================== */
-/* ДОПОЛНИТЕЛЬНЫЕ УЛУЧШЕНИЯ ДЛЯ БОЛЬШИХ ЭКРАНОВ */
-/* ==================== */
-@media screen and (min-width: 1400px) {
-    .nav-container {
-        max-width: 95%;
-    }
-
-    main {
-        max-width: 95%;
     }
 }
