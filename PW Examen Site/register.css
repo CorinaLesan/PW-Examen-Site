@@ -431,3 +431,261 @@ nav button:hover {
     color: #ffffff;
     margin-top: 25px;
 }
+
+/* ==================== */
+/* ПЛАНШЕТЫ (768px - 1024px) */
+/* ==================== */
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 80px;
+    }
+
+    .logo {
+        font-size: 24px;
+        padding: 8px 16px;
+        letter-spacing: 3px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    nav button {
+        padding: 10px 18px;
+        font-size: 18px;
+    }
+
+    .forms-container {
+        gap: 40px;
+        padding: 0 30px;
+        margin: 50px auto;
+    }
+
+    .login-container,
+    .register-container {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .login-box,
+    .register-box {
+        padding: 35px 30px;
+    }
+
+    .login-title,
+    .register-title {
+        font-size: 22px;
+        top: -16px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .footer-info {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/* ==================== */
+/* СМАРТФОНЫ (до 767px) */
+/* ==================== */
+@media screen and (max-width: 767px) {
+    .nav-container {
+        padding: 0 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+        padding: 8px 14px;
+        letter-spacing: 2px;
+        margin-top: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        display: block;
+        padding: 12px 0;
+    }
+
+    nav button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    /* Выпадающие меню для мобильных */
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        display: none;
+        background-color: #f8f8f8;
+        margin-top: 5px;
+        border-radius: 5px;
+        padding: 5px 0;
+        min-width: auto;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .drop-down-second:hover .drop-down-menu-second {
+        display: block;
+    }
+
+    .dropdown-menu a,
+    .drop-down-menu-second a {
+        padding: 10px 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .dropdown-menu a:hover,
+    .drop-down-menu-second a:hover {
+        padding-left: 20px;
+    }
+
+    /* Основной контент */
+    main {
+        padding: 20px 15px;
+    }
+
+    .forms-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        margin: 30px auto;
+        width: 100%;
+    }
+
+    .login-container,
+    .register-container {
+        width: 100%;
+    }
+
+    .login-box,
+    .register-box {
+        padding: 30px 25px;
+        border-width: 1px;
+        border-radius: 15px;
+    }
+
+    .login-title,
+    .register-title {
+        font-size: 20px;
+        top: -15px;
+        padding: 0 15px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .form-group input[type='text'],
+    .form-group input[type='email'],
+    .form-group input[type='password'],
+    .form-group input[type='number'],
+    .form-group select {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+
+    /* Чекбокс */
+    .checkbox-group {
+        margin-bottom: 25px;
+    }
+
+    .checkbox-label {
+        font-size: 13px;
+    }
+
+    /* Кнопки */
+    .login-btn,
+    .register-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    /* Разделитель в форме регистрации */
+    .divider {
+        margin: 20px 0;
+    }
+
+    /* Стили для сетки в форме регистрации */
+    .register-form-group {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+
+    .register-form-group label {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    /* Текст обязательных полей */
+    .required-text {
+        font-size: 12px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    /* Дополнительные оптимизации для формы регистрации */
+    .register-container {
+        order: -1; /* Форма регистрации сверху на мобильных */
+    }
+
+    /* Улучшение визуальной иерархии на маленьких экранах */
+    .form-group select {
+        padding-right: 40px;
+        background-position: right 10px center;
+    }
+
+    /* Футер */
+    .footer {
+        padding: 10px 0;
+        margin-top: 30px;
+    }
+
+    .footer-info {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .footer-info p {
+        margin: 15px 0;
+    }
+
+    .footer-info .info {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
