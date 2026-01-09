@@ -732,8 +732,6 @@ nav button:hover {
     margin-top: 25px;
 }
 
-/* ПЛАНШЕТЫ (768px - 1024px) */
-/* ==================== */
 @media screen and (max-width: 1024px) {
     .nav-container {
         padding: 0 20px;
@@ -771,7 +769,6 @@ nav button:hover {
         margin-right: 60%;
     }
 
-    /* Статистика */
     .daily-stats,
     .macros-section,
     .tabs-section,
@@ -800,7 +797,6 @@ nav button:hover {
         font-size: 28px;
     }
 
-    /* Контент */
     .meals-container {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -839,9 +835,6 @@ nav button:hover {
     }
 }
 
-/* ==================== */
-/* СМАРТФОНЫ (до 767px) */
-/* ==================== */
 @media screen and (max-width: 767px) {
     .nav-container {
         padding: 0 15px;
@@ -881,7 +874,6 @@ nav button:hover {
         font-size: 18px;
     }
 
-    /* Выпадающие меню для мобильных */
     .dropdown-menu,
     .drop-down-menu-second {
         position: static;
@@ -914,7 +906,6 @@ nav button:hover {
         padding-left: 20px;
     }
 
-    /* Хедер страницы */
     .page-header {
         padding: 30px 15px;
     }
@@ -934,7 +925,6 @@ nav button:hover {
         width: 100%;
     }
 
-    /* Основной контент */
     main {
         padding: 0 15px;
     }
@@ -948,7 +938,6 @@ nav button:hover {
         margin: 30px 0;
     }
 
-    /* Статистика */
     .stats-container {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -972,7 +961,6 @@ nav button:hover {
         border-radius: 10px;
     }
 
-    /* Макронутриенты */
     .macros-container {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -986,7 +974,6 @@ nav button:hover {
         font-size: 24px;
     }
 
-    /* Табы */
     .tabs-container {
         flex-direction: column;
         border-bottom: none;
@@ -1004,7 +991,6 @@ nav button:hover {
         background-color: #f9f9f9;
     }
 
-    /* Секции контента */
     .content-section {
         padding: 20px 0;
     }
@@ -1027,7 +1013,6 @@ nav button:hover {
         font-size: 16px;
     }
 
-    /* Today's Meals */
     .meals-container {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -1075,14 +1060,12 @@ nav button:hover {
         text-align: center;
     }
 
-    /* Search Container */
     .search-container input {
         width: 100%;
         padding: 10px 15px;
         font-size: 14px;
     }
 
-    /* Food Database */
     .database-categories {
         gap: 6px;
         margin-bottom: 20px;
@@ -1118,7 +1101,6 @@ nav button:hover {
         font-size: 20px;
     }
 
-    /* Modal */
     .modal-content {
         width: 95%;
         padding: 25px 20px;
@@ -1164,7 +1146,6 @@ nav button:hover {
         font-size: 28px;
     }
 
-    /* Футер */
     .footer {
         margin-top: 50px;
         padding: 10px 0;

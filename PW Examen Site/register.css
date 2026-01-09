@@ -170,7 +170,6 @@ nav button:hover {
     transform: translateY(0);
 }
 
-/* Forms Container - центрирование */
 .forms-container {
     display: flex;
     justify-content: center;
@@ -182,7 +181,6 @@ nav button:hover {
     flex-wrap: wrap;
 }
 
-/* Login Form */
 .login-container {
     width: 450px;
 }
@@ -281,7 +279,6 @@ nav button:hover {
     transform: scale(0.98);
 }
 
-/* Register Form */
 .register-container {
     width: 550px;
 }
@@ -432,9 +429,6 @@ nav button:hover {
     margin-top: 25px;
 }
 
-/* ==================== */
-/* ПЛАНШЕТЫ (768px - 1024px) */
-/* ==================== */
 @media screen and (max-width: 1024px) {
     .nav-container {
         padding: 0 20px;
@@ -492,9 +486,6 @@ nav button:hover {
     }
 }
 
-/* ==================== */
-/* СМАРТФОНЫ (до 767px) */
-/* ==================== */
 @media screen and (max-width: 767px) {
     .nav-container {
         padding: 0 15px;
@@ -534,7 +525,6 @@ nav button:hover {
         font-size: 18px;
     }
 
-    /* Выпадающие меню для мобильных */
     .dropdown-menu,
     .drop-down-menu-second {
         position: static;
@@ -567,7 +557,6 @@ nav button:hover {
         padding-left: 20px;
     }
 
-    /* Основной контент */
     main {
         padding: 20px 15px;
     }
@@ -617,7 +606,6 @@ nav button:hover {
         font-size: 15px;
     }
 
-    /* Чекбокс */
     .checkbox-group {
         margin-bottom: 25px;
     }
@@ -626,19 +614,16 @@ nav button:hover {
         font-size: 13px;
     }
 
-    /* Кнопки */
     .login-btn,
     .register-btn {
         padding: 12px;
         font-size: 15px;
     }
 
-    /* Разделитель в форме регистрации */
     .divider {
         margin: 20px 0;
     }
 
-    /* Стили для сетки в форме регистрации */
     .register-form-group {
         grid-template-columns: 1fr;
         gap: 8px;
@@ -650,7 +635,6 @@ nav button:hover {
         font-size: 14px;
     }
 
-    /* Текст обязательных полей */
     .required-text {
         font-size: 12px;
         margin-top: 8px;
@@ -658,18 +642,15 @@ nav button:hover {
         text-align: center;
     }
 
-    /* Дополнительные оптимизации для формы регистрации */
     .register-container {
-        order: -1; /* Форма регистрации сверху на мобильных */
+        order: -1;
     }
 
-    /* Улучшение визуальной иерархии на маленьких экранах */
     .form-group select {
         padding-right: 40px;
         background-position: right 10px center;
     }
 
-    /* Футер */
     .footer {
         padding: 10px 0;
         margin-top: 30px;

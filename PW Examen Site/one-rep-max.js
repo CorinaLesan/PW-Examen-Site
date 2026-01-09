@@ -1,7 +1,7 @@
-// Переменная для отслеживания единиц измерения (true = metric, false = imperial)
+// переменная для отслеживания единиц измерения (true = metric, false = imperial)
 let isMetric = true;
 
-// Функция для переключения единиц измерения
+// функция для переключения единиц измерения
 function toggleUnit() {
     const toggle = document.getElementById('unitToggle');
     toggle.classList.toggle('active');
@@ -16,7 +16,7 @@ function toggleUnit() {
     }
 }
 
-// Функция для расчета 1RM (используем формулу Epley)
+// функция для расчета 1RM (используем формулу Epley)
 function calculate() {
     const weight = parseFloat(document.getElementById('weight').value);
     const reps = parseInt(document.getElementById('reps').value);
@@ -31,7 +31,7 @@ function calculate() {
         return;
     }
 
-    // Формула Epley: 1RM = weight × (1 + reps/30)
+    // формула Epley: 1RM = weight × (1 + reps/30)
     let oneRepMax;
     if (reps === 1) {
         oneRepMax = weight;

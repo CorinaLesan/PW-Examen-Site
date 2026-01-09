@@ -716,7 +716,6 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     margin-top: 25px;
 }
 
-/* Планшеты (ширина до 1024px) */
 @media (max-width: 1024px) {
     .nav-container {
         padding: 0 20px;
@@ -754,15 +753,14 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
         font-size: 14px;
     }
 
-    /* Адаптация всех секций упражнений для планшетов */
     section#exercises-BarbellLyingTricepsExtensionSkullCrusher,
     section#exercises-LeverSeatedDip,
     section#exercises-TricepsDip,
     section#exercises-DipOnFloorwithChair,
     section#exercises-DiamondPushup,
     section#exercises-BenchDip {
-        padding: 50px 40px !important;
-        height: auto !important;
+        padding: 50px 40px;
+        height: auto;
         flex-direction: column;
         text-align: center;
         gap: 20px;
@@ -774,7 +772,7 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     section#exercises-DipOnFloorwithChair h1,
     section#exercises-DiamondPushup h1,
     section#exercises-BenchDip h1 {
-        font-size: 26px !important;
+        font-size: 26px;
         margin-top: 15px;
         margin-bottom: 15px;
     }
@@ -785,9 +783,9 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     section#exercises-DipOnFloorwithChair p,
     section#exercises-DiamondPushup p,
     section#exercises-BenchDip p {
-        font-size: 16px !important;
+        font-size: 16px;
         margin: 15px 0;
-        max-width: 100% !important;
+        max-width: 100%;
     }
 
     section#exercises-BarbellLyingTricepsExtensionSkullCrusher img,
@@ -796,9 +794,9 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     section#exercises-DipOnFloorwithChair img,
     section#exercises-DiamondPushup img,
     section#exercises-BenchDip img {
-        width: 180px !important;
-        height: 180px !important;
-        margin: 0 auto !important;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
     }
 
     .button-view-details-BarbellLyingTricepsExtensionSkullCrusher,
@@ -813,11 +811,11 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     .button-add-DiamondPushup,
     .button-view-details-BenchDip,
     .button-add-BenchDip {
-        width: 160px !important;
-        height: 50px !important;
-        font-size: 18px !important;
-        margin: 8px !important;
-        padding: 8px 12px !important;
+        width: 160px;
+        height: 50px;
+        font-size: 18px;
+        margin: 8px;
+        padding: 8px 12px;
     }
 
     .footer-info {
@@ -826,7 +824,6 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     }
 }
 
-/* Мобильные устройства (ширина до 768px) */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -915,14 +912,13 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
         text-align: center;
     }
 
-    /* Адаптация всех секций упражнений для мобильных */
     section#exercises-BarbellLyingTricepsExtensionSkullCrusher,
     section#exercises-LeverSeatedDip,
     section#exercises-TricepsDip,
     section#exercises-DipOnFloorwithChair,
     section#exercises-DiamondPushup,
     section#exercises-BenchDip {
-        padding: 30px 20px !important;
+        padding: 30px 20px;
         margin: 10px 0;
         flex-direction: column;
         text-align: center;
@@ -935,7 +931,7 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     section#exercises-DipOnFloorwithChair h1,
     section#exercises-DiamondPushup h1,
     section#exercises-BenchDip h1 {
-        font-size: 22px !important;
+        font-size: 22px;
         margin-bottom: 15px;
     }
 
@@ -945,7 +941,7 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     section#exercises-DipOnFloorwithChair p,
     section#exercises-DiamondPushup p,
     section#exercises-BenchDip p {
-        font-size: 15px !important;
+        font-size: 15px;
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -956,9 +952,9 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     section#exercises-DipOnFloorwithChair img,
     section#exercises-DiamondPushup img,
     section#exercises-BenchDip img {
-        width: 150px !important;
-        height: 150px !important;
-        margin: 0 auto 20px !important;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px;
     }
 
     .button-view-details-BarbellLyingTricepsExtensionSkullCrusher,
@@ -973,11 +969,11 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     .button-add-DiamondPushup,
     .button-view-details-BenchDip,
     .button-add-BenchDip {
-        width: 100% !important;
-        margin: 5px 0 !important;
-        font-size: 16px !important;
-        padding: 12px !important;
-        height: auto !important;
+        width: 100%;
+        margin: 5px 0;
+        font-size: 16px;
+        padding: 12px;
+        height: auto;
     }
 
     .pagination {

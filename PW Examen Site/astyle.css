@@ -401,7 +401,6 @@ main {
         padding: 15px;
     }
 
-    /* Адаптация выпадающих меню */
     .dropdown-menu,
     .drop-down-menu-second {
         min-width: 200px;
@@ -452,7 +451,6 @@ main {
         font-size: 18px;
     }
 
-    /* Выпадающие меню для мобильных */
     .dropdown-menu,
     .drop-down-menu-second {
         position: static;
@@ -478,7 +476,7 @@ main {
         font-size: 15px;
     }
 
-    /* Основной контент */
+    /* основной контент */
     main {
         padding: 20px 15px;
     }
@@ -500,7 +498,7 @@ main {
         letter-spacing: 1px;
     }
 
-    /* Карточки с информацией */
+    /* инфа с карточками */
     .info-section {
         display: flex;
         flex-direction: column;
@@ -538,7 +536,7 @@ main {
         line-height: 1.5;
     }
 
-    /* Секция регистрации */
+    /* регистрация */
     .reg {
         padding: 40px 15px;
         margin-top: 30px;
@@ -563,7 +561,7 @@ main {
         border-radius: 8px;
     }
 
-    /* Футер */
+    /* футер*/
     .footer {
         padding: 10px 0;
     }

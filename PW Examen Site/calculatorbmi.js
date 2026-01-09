@@ -1,13 +1,13 @@
-// Переменная для отслеживания единиц измерения (true = metric, false = imperial)
+// переменная для отслеживания единиц измерения (true = metric, false = imperial)
 let isMetric = true;
 
-// Функция для переключения единиц измерения
+// функция для переключения единиц измерения
 function toggleUnit() {
     const toggle = document.getElementById('unitToggle');
     toggle.classList.toggle('active');
     isMetric = !toggle.classList.contains('active');
 
-    // Обновляем placeholder
+    // обновляется placeholder после введения
     const weightInput = document.getElementById('weight');
     const heightInput = document.getElementById('height');
 
@@ -19,19 +19,19 @@ function toggleUnit() {
         heightInput.placeholder = 'Your height... (inches)';
     }
 
-    // Очищаем поля и результат
+    // очищает поля и результат
     weightInput.value = '';
     heightInput.value = '';
     document.getElementById('result').textContent = '?';
     document.getElementById('bmiCategory').className = 'bmi-category';
 }
 
-// Функция для расчета BMI
+// функция для расчета BMI
 function calculateBMI() {
     const weight = parseFloat(document.getElementById('weight').value);
     const height = parseFloat(document.getElementById('height').value);
 
-    // Проверка валидности данных
+    // проверка валидности данных
     if (!weight || !height || weight <= 0 || height <= 0) {
         alert('Please enter valid weight and height values');
         return;
@@ -40,25 +40,25 @@ function calculateBMI() {
     let bmi;
 
     if (isMetric) {
-        // Метрическая система: BMI = вес(кг) / (рост(м))²
+        // метрическая система: BMI = вес(кг) / (рост(м))²
         const heightInMeters = height / 100;
         bmi = weight / (heightInMeters * heightInMeters);
     } else {
-        // Имперская система: BMI = (вес(lbs) / (рост(inches))²) × 703
+        // имперская система: BMI = (вес(lbs) / (рост(inches))²) × 703
         bmi = (weight / (height * height)) * 703;
     }
 
-    // Округляем до 1 десятичного знака
+    // округляем до 1 десятичного знака
     bmi = Math.round(bmi * 10) / 10;
 
-    // Отображаем результат
+    // отображаем результат
     document.getElementById('result').textContent = bmi;
 
-    // Определяем категорию BMI
+    // определяем категорию BMI
     showBMICategory(bmi);
 }
 
-// Функция для отображения категории BMI
+// функция для отображения категории BMI
 function showBMICategory(bmi) {
     const categoryDiv = document.getElementById('bmiCategory');
     let category = '';
@@ -82,7 +82,7 @@ function showBMICategory(bmi) {
     categoryDiv.className = 'bmi-category show ' + categoryClass;
 }
 
-// Добавляем поддержку Enter для расчета
+// добавляем поддержку Enter для расчета
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('weight').addEventListener('keypress', function (e) {
         if (e.key === 'Enter') calculateBMI();

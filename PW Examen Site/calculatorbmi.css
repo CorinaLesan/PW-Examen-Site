@@ -413,8 +413,6 @@ input[type='number']:focus {
     margin-top: 25px;
 }
 
-/* ПЛАНШЕТЫ (768px - 1024px) */
-/* ==================== */
 @media screen and (max-width: 1024px) {
     body {
         background-size: cover;
@@ -476,7 +474,6 @@ input[type='number']:focus {
         padding: 15px;
     }
 
-    /* Исправление для выпадающих меню */
     .dropdown-menu,
     .drop-down-menu-second {
         min-width: 180px;
@@ -484,9 +481,6 @@ input[type='number']:focus {
     }
 }
 
-/* ==================== */
-/* СМАРТФОНЫ (до 767px) */
-/* ==================== */
 @media screen and (max-width: 767px) {
     body {
         background-size: cover;
@@ -532,7 +526,6 @@ input[type='number']:focus {
         font-size: 18px;
     }
 
-    /* Выпадающие меню для мобильных */
     .dropdown-menu,
     .drop-down-menu-second {
         position: static;
@@ -565,7 +558,6 @@ input[type='number']:focus {
         padding-left: 20px;
     }
 
-    /* Основной контент - калькулятор */
     main {
         padding: 20px 15px;
         display: flex;
@@ -622,12 +614,12 @@ input[type='number']:focus {
         width: 100%;
         padding: 14px;
         font-size: 16px;
-        order: 2; /* Кнопка внизу */
+        order: 2;
     }
 
     .toggle-container {
         justify-content: center;
-        order: 1; /* Переключатель сверху */
+        order: 1;
         margin-bottom: 10px;
     }
 

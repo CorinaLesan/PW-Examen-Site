@@ -1,10 +1,6 @@
-// ========================================
-// ДАННЫЕ И СОСТОЯНИЕ ПРИЛОЖЕНИЯ
-// ========================================
-
-// База продуктов с эмодзи
+// база продуктов с эмодзи
 const foodDatabase = [
-    // Белки
+    // белки
     {
         name: 'Chicken Breast',
         category: 'protein',
@@ -106,7 +102,7 @@ const foodDatabase = [
         emoji: '🥢',
     },
 
-    // Овощи
+    // овощи
     {
         name: 'Broccoli',
         category: 'vegetables',
@@ -248,7 +244,7 @@ const foodDatabase = [
         emoji: '🍆',
     },
 
-    // Фрукты
+    // фрукты
     {
         name: 'Apple',
         category: 'fruits',
@@ -410,7 +406,7 @@ const foodDatabase = [
         emoji: '🫐',
     },
 
-    // Зерновые
+    // зерновые
     {
         name: 'Brown Rice',
         category: 'grains',
@@ -522,7 +518,7 @@ const foodDatabase = [
         emoji: '🥣',
     },
 
-    // Молочные продукты
+    // молочные продукты
     {
         name: 'Greek Yogurt',
         category: 'dairy',
@@ -604,7 +600,7 @@ const foodDatabase = [
         emoji: '🧀',
     },
 
-    // Снеки и другое
+    // снеки и другое
     {
         name: 'Almonds',
         category: 'snacks',
@@ -757,7 +753,7 @@ const foodDatabase = [
     },
 ];
 
-// Состояние приложения
+// состояние приложения
 let todayMeals = {
     breakfast: [],
     lunch: [],
@@ -770,9 +766,7 @@ let currentCategory = 'all';
 let currentWeekOffset = 0;
 let mealPlan = {};
 
-// ========================================
-// ИНИЦИАЛИЗАЦИЯ
-// ========================================
+// инициализация
 
 document.addEventListener('DOMContentLoaded', function () {
     loadUserData();
@@ -782,9 +776,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loadMealPlan();
 });
 
-// ========================================
-// ЗАГРУЗКА ДАННЫХ ПОЛЬЗОВАТЕЛЯ
-// ========================================
+// загрузка данных пользователя
 
 function loadUserData() {
     const userData = JSON.parse(sessionStorage.getItem('userData'));
@@ -795,9 +787,7 @@ function loadUserData() {
     }
 }
 
-// ========================================
-// УПРАВЛЕНИЕ ТАБАМИ
-// ========================================
+// управления табами
 
 function switchTab(tab) {
     document.querySelectorAll('.tab-btn').forEach((btn) => btn.classList.remove('active'));
@@ -816,9 +806,7 @@ function switchTab(tab) {
     }
 }
 
-// ========================================
-// TODAY'S MEALS - СЕГОДНЯШНИЕ ПРИЕМЫ ПИЩИ
-// ========================================
+// сегоднешние приемы пищи
 
 function loadTodayMeals() {
     const today = new Date().toDateString();
@@ -880,9 +868,7 @@ function removeFoodFromMeal(meal, index) {
     displayTodayMeals();
 }
 
-// ========================================
-// СТАТИСТИКА И ПРОГРЕСС
-// ========================================
+// статистика и прогресс
 
 function updateDailyStats() {
     let totalCalories = 0;
@@ -932,9 +918,7 @@ function updateDailyStats() {
         Math.min((totalFats / fatsGoal) * 100, 100) + '%';
 }
 
-// ========================================
-// FOOD DATABASE - БАЗА ПРОДУКТОВ
-// ========================================
+// база продуктов
 
 function displayFoodDatabase(filter = 'all', searchTerm = '') {
     const container = document.getElementById('foodDatabase');
@@ -993,9 +977,7 @@ function selectFoodFromDatabase(food) {
     openAddFoodModal();
 }
 
-// ========================================
-// MODAL - ДОБАВЛЕНИЕ ЕДЫ
-// ========================================
+// добавления еды
 
 function openAddFoodModal() {
     const modal = document.getElementById('addFoodModal');
@@ -1093,9 +1075,7 @@ function addFoodToMeal() {
     document.querySelectorAll('.tab-btn')[0].click();
 }
 
-// ========================================
-// MEAL PLAN - ПЛАН ПИТАНИЯ
-// ========================================
+// план питания
 
 function loadMealPlan() {
     const saved = localStorage.getItem('mealPlan');
