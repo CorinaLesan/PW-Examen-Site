@@ -48,223 +48,166 @@
             </nav>
         </header>
 
-         <main class="profile-main">           
+        <main class="profile-main">
             <div class="profile-container">
-                <h1 class="profile-title">MY PROFILE</h1>   
-                <div class="profile-content">                  
-                    <div class="profile-left">                
-                        <div class="avatar-section">
-                            <div class="avatar-container">
-                                <img
-                                    id="avatarImage"
-                                    src="img/default-avatar.png"
-                                    alt="User Avatar"
+                <div class="profile-form">
+                    <h1 class="profile-title">MY PROFILE</h1>
+
+                    <div class="form-section">
+                        <h2 class="section-title">Personal Information</h2>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Enter your first name"
                                 />
-                                <div class="avatar-overlay">
-                                    <label for="avatarUpload" class="upload-btn">
-                                        <span class="upload-icon">📷</span>
-                                        <span>Change Photo</span>
-                                    </label>
-                                    <input
-                                        type="file"
-                                        id="avatarUpload"
-                                        accept="image/*"
-                                        style="display: none"
-                                    />
-                                </div>
-                            </div>                          
-                            <div class="avatar-info">
-                                <h3 id="userName">John Doe</h3>
-                                <p id="userEmail">john.doe@example.com</p>
-                                <p class="member-since">
-                                    Member since: <span id="memberSince">January 2024</span>
-                                </p>
                             </div>
-                            <button id="removeAvatarBtn" class="remove-btn">Remove Avatar</button>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Enter your last name"
+                                />
+                            </div>
                         </div>
-                        <!-- Индивидуальные настройки -->
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Enter your username"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input
+                                    type="email"
+                                    class="form-input"
+                                    placeholder="Enter your email"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <select class="form-select">
+                                    <option value="">Select gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Age</label>
+                                <input
+                                    type="number"
+                                    class="form-input"
+                                    placeholder="Enter your age"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Weight</label>
+                                <input
+                                    type="number"
+                                    class="form-input"
+                                    placeholder="Enter weight"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label>Height</label>
+                                <input
+                                    type="number"
+                                    class="form-input"
+                                    placeholder="Enter height"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Fitness Goal</label>
+                                <select class="form-select">
+                                    <option value="">Select goal</option>
+                                    <option value="lose">Lose Weight</option>
+                                    <option value="maintain">Maintain Weight</option>
+                                    <option value="gain">Gain Muscle</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Activity Level</label>
+                                <select class="form-select">
+                                    <option value="">Select level</option>
+                                    <option value="sedentary">
+                                        Sedentary (Little or no exercise)
+                                    </option>
+                                    <option value="light">Lightly active</option>
+                                    <option value="moderate">Moderately active</option>
+                                    <option value="very">Very active</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Bio</label>
+                            <textarea
+                                class="form-textarea"
+                                placeholder="Tell us about your fitness journey..."
+                                rows="4"
+                            ></textarea>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="profile-info">
+                            <h3>John Doe</h3>
+                            <p class="email">john.doe@example.com</p>
+                            <p class="member-since">Member since: January 2024</p>
+                            <button class="remove-avatar-btn">Remove Avatar</button>
+                        </div>
+
+                        <div class="divider"></div>
+
                         <div class="settings-section">
-                            <h3><span class="settings-icon">⚙️</span> Settings</h3>
-                            <div class="settings-list">
-                            <div class="setting-item">
-                                <span>Theme</span>
-                                <select id="themeSelect">
-                                    <option value="light">Light</option>
-                                    <option value="dark">Dark</option>
-                                    <option value="auto">Auto</option>
-                                </select>
-                            </div>
-                            <div class="setting-item">
-                                <span>Notifications</span>
-                                <label class="switch">
-                                    <input type="checkbox" id="notificationsToggle" checked />
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
-                            <div class="setting-item">
-                                <span>Email Updates</span>
-                                <label class="switch">
-                                    <input type="checkbox" id="emailUpdatesToggle" checked />
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
-                            <div class="setting-item">
-                                <span>Workout Reminders</span>
-                                <select id="remindersSelect">
-                                    <option value="none">None</option>
-                                    <option value="daily">Daily</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="custom">Custom</option>
-                                </select>
-                            </div>
-                            <div class="setting-item">
-                                <span>Measurement Units</span>
-                                <select id="unitsSelect">
+                            <h2 class="section-title">Settings</h2>
+                            <div class="form-group">
+                                <label>Measurement Units</label>
+                                <select class="form-select">
                                     <option value="metric">Metric (kg, cm)</option>
-                                    <option value="imperial">Imperial (lbs, in)</option>
+                                    <option value="imperial">Imperial (lb, in)</option>
                                 </select>
                             </div>
                         </div>
-                        <button id="saveSettingsBtn" class="save-settings-btn">
-                            Save Settings
-                        </button>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button class="btn-cancel">Cancel</button>
+                        <button class="btn-save">Save Changes</button>
                     </div>
                 </div>
-            
-                <div class="profile-right">
-                    <div class="personal-data-section">
-                        <h3><span class="data-icon">👤</span> Personal Information</h3>
 
-                        <form id="personalDataForm">
-                            <div class="form-grid">
-                                <div class="form-group">
-                                    <label for="editFirstName">First Name</label>
-                                    <input
-                                        type="text"
-                                        id="editFirstName"
-                                        name="firstName"
-                                        required
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <label for="editLastName">Last Name</label>
-                                    <input
-                                        type="text"
-                                        id="editLastName"
-                                        name="lastName"
-                                        required
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <label for="editUsername">Username</label>
-                                    <input
-                                        type="text"
-                                        id="editUsername"
-                                        name="username"
-                                        required
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <label for="editEmail">Email Address</label>
-                                    <input type="email" id="editEmail" name="email" required />
-                                </div>
-                                <div class="form-group">
-                                    <label for="editGender">Gender</label>
-                                    <select id="editGender" name="gender" required>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="editAge">Age</label>
-                                    <input
-                                        type="number"
-                                        id="editAge"
-                                        name="age"
-                                        min="1"
-                                        max="120"
-                                        required
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <label for="editHeight">Height</label>
-                                    <div class="input-with-unit">
-                                        <input
-                                            type="number"
-                                            id="editHeight"
-                                            name="height"
-                                            min="1"
-                                            required
-                                        />
-                                        <span class="unit" id="heightUnit">cm</span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="editWeight">Weight</label>
-                                    <div class="input-with-unit">
-                                        <input
-                                            type="number"
-                                            id="editWeight"
-                                            name="weight"
-                                            min="1"
-                                            step="0.1"
-                                            required
-                                        />
-                                        <span class="unit" id="weightUnit">kg</span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="editGoal">Fitness Goal</label>
-                                    <select id="editGoal" name="goal" required>
-                                        <option value="lose-weight">Lose Weight</option>
-                                        <option value="maintain">Maintain Weight</option>
-                                        <option value="gain-muscle">Gain Muscle</option>
-                                        <option value="improve-fitness">Improve Fitness</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="editActivity">Activity Level</label>
-                                    <select id="editActivity" name="activity" required>
-                                        <option value="sedentary">
-                                            Sedentary (Little or no exercise)
-                                        </option>
-                                        <option value="light">
-                                            Light (Exercise 1-3 days/week)
-                                        </option>
-                                        <option value="moderate">
-                                            Moderate (Exercise 3-5 days/week)
-                                        </option>
-                                        <option value="active">
-                                            Active (Exercise 6-7 days/week)
-                                        </option>
-                                        <option value="very-active">
-                                            Very Active (Hard exercise daily)
-                                        </option>
-                                    </select>
-                                </div>
-                                <div class="form-group full-width">
-                                    <label for="editBio">Bio</label>
-                                    <textarea
-                                        id="editBio"
-                                        name="bio"
-                                        rows="4"
-                                        placeholder="Tell us about your fitness journey..."
-                                    ></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-actions">
-                                <button type="button" id="cancelEditBtn" class="cancel-btn">
-                                    Cancel
-                                </button>
-                                <button type="submit" id="saveDataBtn" class="save-btn">
-                                    Save Changes
-                                </button>
-                            </div>
-                        </form>
+                <div class="avatar-section">
+                    <div class="avatar-container">
+                        <div class="avatar-placeholder">
+                            <span class="avatar-icon">👤</span>
+                        </div>
+                        <div class="avatar-instruction">
+                            <p>Drag & drop your photo here</p>
+                            <p class="small-text">or click to browse</p>
+                        </div>
                     </div>
-                </main>
+                </div>
+            </div>
+        </main>
 
         <script src="profile.js"></script>
 
