@@ -18,7 +18,13 @@
             <nav>
                 <div class="nav-container">
                     <a href="aindex.html" class="logo">BODYPOWER</a>
-                    <ul class="nav-links">
+                    <button class="burger-btn" id="burgerBtn">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </button>
+
+                    <ul class="nav-links" id="navLinks">
                         <li class="dropdown">
                             <a href="#">WORKOUTS</a>
                             <ul class="dropdown-menu">
@@ -46,12 +52,6 @@
                     </ul>
                 </div>
             </nav>
-            <div class="page-header">
-                <div class="header-content">
-                    <h1 class="page-title">NUTRITION</h1>
-                    <p class="page-subtitle">Track Your Daily Nutrition & Calories</p>
-                </div>
-            </div>
         </header>
 
         <main>
@@ -235,8 +235,6 @@
                     </div>
                 </div>
             </div>
-
-            <script src="nutrition.js"></script>
         </main>
 
         <footer class="footer">
@@ -246,5 +244,7 @@
                 <p class="info">This website was created for educational purposes Lesan Corina</p>
             </div>
         </footer>
+        <script src="nutrition.js"></script>
+        <script src="js/burger.js"></script>
     </body>
 </html>

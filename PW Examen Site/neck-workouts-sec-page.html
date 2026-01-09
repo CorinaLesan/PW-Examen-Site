@@ -18,7 +18,14 @@
             <nav>
                 <div class="nav-container">
                     <a href="aindex.html" class="logo">BODYPOWER</a>
-                    <ul class="nav-links">
+
+                    <button class="burger-btn" id="burgerBtn">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </button>
+
+                    <ul class="nav-links" id="navLinks">
                         <li class="dropdown">
                             <a href="#">WORKOUTS</a>
                             <ul class="dropdown-menu">
@@ -45,17 +52,17 @@
                         <button><a href="register.html">LOGIN / REGISTER</a></button>
                     </ul>
                 </div>
+
+                <div class="page-header">
+                    <div class="header-content">
+                        <h1 class="page-title">Neck</h1>
+                        <p class="page-subtitle">Exercise Primary Muscle</p>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <main>
-            <section class="page-header">
-                <div class="header-content">
-                    <h1 class="page-title">Neck</h1>
-                    <p class="page-subtitle">Exercise Primary Muscle</p>
-                </div>
-            </section>
-
             <section id="exercises-FrontandBackNeckStretch">
                 <div class="exercise">
                     <h1 class="FrontandBackNeckStretch">Front and Back Neck Stretch</h1>
@@ -232,5 +239,7 @@
                 <p class="info">This website was created for educational purposes Lesan Corina</p>
             </div>
         </footer>
+
+        <script src="js/burger.js"></script>
     </body>
 </html>

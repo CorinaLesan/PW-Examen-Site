@@ -51,7 +51,6 @@ nav {
     color: #333;
     font-size: 19px;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s;
 }
@@ -429,44 +428,332 @@ nav button a {
     margin-top: 25px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
+    .profile-main {
+        padding: 0 20px;
+        margin: 30px auto;
+    }
+
     .profile-container {
-        flex-direction: column;
+        gap: 30px;
+    }
+
+    .profile-form {
+        padding: 30px;
+    }
+
+    .profile-title {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        gap: 15px;
     }
 
     .avatar-section {
-        width: 100%;
-        margin-top: 40px;
+        width: 350px;
+        padding: 30px;
     }
 
-    .nav-links {
-        gap: 80px;
+    .avatar-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+
+    .avatar-icon {
+        font-size: 60px;
+    }
+
+    .footer-info {
+        padding: 0 30px;
+        font-size: 18px;
     }
 }
 
 @media (max-width: 768px) {
     .profile-main {
-        padding: 0 20px;
+        padding: 0 15px;
+        margin: 20px auto;
     }
 
-    .profile-form {
-        padding: 20px;
-    }
-
-    .form-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-container {
-        padding: 0 20px;
+    .profile-container {
         flex-direction: column;
         gap: 20px;
     }
 
+    .profile-form {
+        padding: 20px;
+        width: 100%;
+        order: 2;
+    }
+
+    .avatar-section {
+        width: 100%;
+        padding: 25px;
+        order: 1;
+    }
+
+    .profile-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+
+    .avatar-placeholder {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .avatar-icon {
+        font-size: 50px;
+    }
+
+    .avatar-instruction p {
+        font-size: 16px;
+    }
+
+    .avatar-instruction .small-text {
+        font-size: 14px;
+    }
+
+    .profile-info h3 {
+        font-size: 20px;
+    }
+
+    .profile-info .email {
+        font-size: 15px;
+    }
+
+    .remove-avatar-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .divider {
+        margin: 20px 0;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn-cancel,
+    .btn-save {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+
+    .footer-info {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .footer-info p {
+        margin: 15px 0;
+    }
+
+    .footer-info .info {
+        font-size: 14px;
+    }
+}
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    position: relative;
+    transition: none;
+}
+
+.burger-btn:hover {
+    background-color: transparent;
+    transform: none;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+    .burger-btn {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 25%;
+    }
+
     .nav-links {
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        padding: 80px 20px 30px;
+        gap: 25px;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+        margin-top: 20px;
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: static;
+        display: none;
+        background-color: #f9f9f9;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .drop-down-second:hover .drop-down-menu-second {
+        display: none;
+    }
+
+    .dropdown.active .dropdown-menu,
+    .drop-down-second.active .drop-down-menu-second {
+        display: block;
+    }
+
+    .dropdown-menu a,
+    .drop-down-menu-second a {
+        padding: 12px 20px;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-menu a:last-child,
+    .drop-down-menu-second a:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown > a,
+    .drop-down-second > a {
+        position: relative;
+        padding-right: 30px;
+    }
+
+    .dropdown > a::after,
+    .drop-down-second > a::after {
+        content: '›';
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        font-size: 20px;
+        transition: transform 0.3s;
+    }
+
+    .dropdown.active > a::after,
+    .drop-down-second.active > a::after {
+        transform: translateY(-50%) rotate(-90deg);
+    }
+
+    .nav-links button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px;
+    }
+
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .nav-overlay.active {
+        display: block;
+    }
+
+    .nav-container {
+        position: relative;
+    }
+
+    .logo {
+        margin: 0 auto;
+        font-size: 20px;
+        padding: 8px 15px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .burger-btn {
+        display: none;
     }
 }

@@ -51,7 +51,6 @@ nav {
     color: #333;
     font-size: 19px;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s;
 }
@@ -995,5 +994,171 @@ section#exercises-Bandfacepull .button-add-Bandfacepull:hover {
     .footer-info .info {
         font-size: 14px;
         margin-top: 15px;
+    }
+}
+
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    position: relative;
+    transition: none;
+}
+
+.burger-btn:hover {
+    background-color: transparent;
+    transform: none;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+    .burger-btn {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 17%;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        padding: 80px 20px 30px;
+        gap: 0;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+        margin-top: 20px;
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .dropdown-menu,
+    .drop-down-menu-second {
+        position: static;
+        display: none;
+        background-color: #f9f9f9;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .drop-down-second:hover .drop-down-menu-second {
+        display: none;
+    }
+
+    .dropdown.active .dropdown-menu,
+    .drop-down-second.active .drop-down-menu-second {
+        display: block;
+    }
+
+    .dropdown-menu a,
+    .drop-down-menu-second a {
+        padding: 12px 20px;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-menu a:last-child,
+    .drop-down-menu-second a:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown > a,
+    .drop-down-second > a {
+        position: relative;
+        padding-right: 30px;
+    }
+
+    .dropdown > a::after,
+    .drop-down-second > a::after {
+        content: '›';
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        font-size: 20px;
+        transition: transform 0.3s;
+    }
+
+    .dropdown.active > a::after,
+    .drop-down-second.active > a::after {
+        transform: translateY(-50%) rotate(-90deg);
+    }
+
+    .nav-links button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px;
+    }
+
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .nav-overlay.active {
+        display: block;
+    }
+
+    .nav-container {
+        position: relative;
+    }
+
+    .logo {
+        margin: 0px 10px 10px 135px;
+        font-size: 20px;
+        padding: 8px 15px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .burger-btn {
+        display: none;
     }
 }
