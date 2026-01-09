@@ -750,17 +750,16 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
     }
 
     .nav-container {
-        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
     }
 
     .logo {
-        margin: 0 auto 10px;
         font-size: 20px;
-        padding: 8px 15px;
-        letter-spacing: 2px;
-        position: relative;
-        left: 0;
-        transform: none;
+        padding: 6px 12px;
+        letter-spacing: 3px;
+        align-self: flex-start;
     }
 
     .nav-links {
