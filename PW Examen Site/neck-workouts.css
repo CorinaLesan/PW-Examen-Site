@@ -1075,7 +1075,7 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
     }
 
     .logo {
-        margin: 0px 10px 10px 135px;
+        margin: 0px 10px 10px 13px;
         font-size: 20px;
         padding: 8px 15px;
         letter-spacing: 2px;
@@ -1085,67 +1085,5 @@ section#exercises-NeckRotationStretch .button-add-NeckRotationStretch:hover {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .burger-btn {
         display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-container {
-        padding: 0 15px;
-    }
-
-    .logo {
-        font-size: 20px;
-        padding: 5px 10px;
-        letter-spacing: 1px;
-    }
-
-    .nav-links {
-        width: 85%;
-        padding: 90px 20px 20px;
-    }
-
-    .page-title {
-        font-size: 28px;
-    }
-
-    .page-subtitle {
-        font-size: 13px;
-    }
-
-    .exercise-section {
-        padding: 25px 15px;
-    }
-
-    .exercise-section h1 {
-        font-size: 22px;
-    }
-
-    .exercise-section p {
-        font-size: 15px;
-    }
-
-    .exercise-section img {
-        width: 160px;
-        height: 160px;
-    }
-
-    .exercise-section .button-view-details,
-    .exercise-section .button-add {
-        width: 140px;
-        height: 45px;
-        font-size: 15px;
-        padding: 8px 12px;
-    }
-
-    .exercise-section .button-add {
-        width: 80px;
-    }
-
-    .footer-info {
-        font-size: 14px;
-    }
-
-    .footer-info .info {
-        font-size: 12px;
     }
 }
