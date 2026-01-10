@@ -48,14 +48,13 @@
                         </li>
                         <li><a href="nutrition.html">NUTRITION</a></li>
                         <li><a href="profile.html">PROFILE</a></li>
-                        <button><a href="register.html">LOGIN / REGISTER</a></button>
+                        <a href="register.html" class="btn">LOGIN/REGISTER</a>
                     </ul>
                 </div>
             </nav>
         </header>
 
         <main>
-            <!-- Дневная статистика -->
             <section class="daily-stats">
                 <div class="stats-container">
                     <div class="stat-card">
@@ -79,7 +78,6 @@
                 </div>
             </section>
 
-            <!-- Макронутриенты -->
             <section class="macros-section">
                 <div class="macros-container">
                     <div class="macro-card">
@@ -106,7 +104,6 @@
                 </div>
             </section>
 
-            <!-- Табы -->
             <section class="tabs-section">
                 <div class="tabs-container">
                     <button class="tab-btn active" onclick="switchTab('today')">
@@ -116,7 +113,6 @@
                 </div>
             </section>
 
-            <!-- Today's Food -->
             <section id="todayTab" class="content-section active">
                 <div class="content-container">
                     <div class="section-header">
@@ -152,7 +148,6 @@
                 </div>
             </section>
 
-            <!-- Food Database -->
             <section id="databaseTab" class="content-section">
                 <div class="content-container">
                     <div class="section-header">
@@ -197,7 +192,6 @@
                 </div>
             </section>
 
-            <!-- Modal для добавления еды -->
             <div id="addFoodModal" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeAddFoodModal()">&times;</span>

@@ -59,7 +59,7 @@ nav {
     color: #ff0000;
 }
 
-nav button {
+nav .btn {
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 7px;
@@ -71,9 +71,9 @@ nav button {
     white-space: nowrap;
 }
 
-nav button:hover {
+nav .btn:hover {
     background-color: #fffb00;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .dropdown {
     position: relative;
@@ -718,7 +718,7 @@ section#exercises-BarbellRearDeltRaise .button-add-BarbellRearDeltRaise:hover {
         font-size: 16px;
     }
 
-    nav button {
+    nav .btn {
         padding: 8px 16px;
         font-size: 18px;
     }
@@ -843,7 +843,7 @@ section#exercises-BarbellRearDeltRaise .button-add-BarbellRearDeltRaise:hover {
         padding: 10px 0;
     }
 
-    nav button {
+    nav .btn {
         width: 100%;
         margin-top: 10px;
         padding: 12px;
@@ -1017,7 +1017,7 @@ section#exercises-BarbellRearDeltRaise .button-add-BarbellRearDeltRaise:hover {
         display: flex;
         position: absolute;
         right: 30px;
-        top: 17%;
+        top: 27%;
     }
 
     .nav-links {
@@ -1112,10 +1112,11 @@ section#exercises-BarbellRearDeltRaise .button-add-BarbellRearDeltRaise:hover {
         transform: translateY(-50%) rotate(-90deg);
     }
 
-    .nav-links button {
+    .nav-links .btn {
         width: 100%;
         margin-top: 10px;
         padding: 15px;
+        text-align: center;
     }
 
     .nav-overlay {

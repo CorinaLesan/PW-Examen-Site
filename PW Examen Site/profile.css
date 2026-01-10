@@ -63,7 +63,7 @@ nav {
     color: #ff0000;
 }
 
-nav button {
+nav .btn {
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 7px;
@@ -75,12 +75,12 @@ nav button {
     white-space: nowrap;
 }
 
-nav button:hover {
+nav .btn:hover {
     background-color: #fffb00;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-nav button a {
+nav .btn a {
     text-decoration: none;
     color: inherit;
 }
@@ -623,8 +623,8 @@ nav button a {
     .burger-btn {
         display: flex;
         position: absolute;
-        right: 20px;
-        top: 25%;
+        right: 30px;
+        top: 26%;
     }
 
     .nav-links {
@@ -719,10 +719,11 @@ nav button a {
         transform: translateY(-50%) rotate(-90deg);
     }
 
-    .nav-links button {
+    .nav-links .btn {
         width: 100%;
         margin-top: 10px;
         padding: 15px;
+        text-align: center;
     }
 
     .nav-overlay {
