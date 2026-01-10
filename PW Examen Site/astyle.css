@@ -293,7 +293,7 @@ main {
     line-height: 1.6;
 }
 
-.reg button {
+.reg-btn {
     background-color: #cb1313;
     color: white;
     padding: 15px 40px;
@@ -306,7 +306,7 @@ main {
     display: inline-block;
 }
 
-.reg button:hover {
+.reg-btn:hover {
     background-color: #079590;
 }
 
@@ -551,11 +551,12 @@ main {
         line-height: 1.5;
     }
 
-    .reg button {
+    .reg-btn {
         width: 100%;
         padding: 14px;
-        font-size: 16px;
+        font-size: 20px;
         border-radius: 8px;
+        text-decoration: none;
     }
 
     .footer {
