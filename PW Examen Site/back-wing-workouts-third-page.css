@@ -947,8 +947,8 @@ section#exercises-SuspendedRow .button-add-SuspendedRow:hover {
     section#exercises-ReverseGripBentoverRow img,
     section#exercises-WideGripPullUp img,
     section#exercises-SuspendedRow img {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
         margin: 0 auto 20px;
     }
 

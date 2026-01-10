@@ -951,8 +951,8 @@ section#exercises-BenchDip .button-add-BenchDip:hover {
     section#exercises-DipOnFloorwithChair img,
     section#exercises-DiamondPushup img,
     section#exercises-BenchDip img {
-        width: 150px;
-        height: 150px;
+        width: 350px;
+        height: 250px;
         margin: 0 auto 20px;
     }
 

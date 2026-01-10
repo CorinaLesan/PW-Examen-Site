@@ -947,8 +947,8 @@ section#exercises-ElevantedPushUp .button-add-ElevantedPushUp:hover {
     section#exercises-WideHandPushup img,
     section#exercises-DeepPushUp img,
     section#exercises-ElevantedPushUp img {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
         margin: 0 auto 20px;
     }
 

@@ -947,8 +947,8 @@ section#exercises-BenchSquat .button-add-BenchSquat:hover {
     section#exercises-Barbellsumosquat img,
     section#exercises-BarbellDeadlift img,
     section#exercises-BenchSquat img {
-        width: 150px;
-        height: 150px;
+        width: 350px;
+        height: 250px;
         margin: 0 auto 20px;
     }
 

@@ -947,8 +947,8 @@ section#exercises-Pushup .button-add-Pushup:hover {
     section#exercises-DumbbellBenchPress img,
     section#exercises-CableStandingFly img,
     section#exercises-Pushup img {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
         margin: 0 auto 20px;
     }
 

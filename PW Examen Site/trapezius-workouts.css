@@ -942,13 +942,13 @@ section#exercises-BarbellShrug .button-add-BarbellShrug:hover {
     }
 
     section#exercises-OverheadShrug img,
-    section#exercises-GittlesonShrug img,
+    section#exercises-GittlesonShrug,
     section#exercises-45DegreeInclineDumbbellRow img,
     section#exercises-DumbbellShrug img,
     section#exercises-CableShrug img,
     section#exercises-BarbellShrug img {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
         margin: 0 auto 20px;
     }
 

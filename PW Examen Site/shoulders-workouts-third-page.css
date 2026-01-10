@@ -949,8 +949,8 @@ section#exercises-DumbbellCubanPress .button-add-DumbbellCubanPress:hover {
     section#exercises-DumbbellOneArmShoulderPress img,
     section#exercises-DumbbellStandingAroundWorld img,
     section#exercises-DumbbellCubanPress img {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 250px;
         margin: 0 auto 20px;
     }
 

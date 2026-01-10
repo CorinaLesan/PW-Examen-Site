@@ -948,8 +948,8 @@ section#exercises-Shrug .button-add-Shrug:hover {
     section#exercises-BentOverRow img,
     section#exercises-LeverSeatedRow img,
     section#exercises-Shrug img {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
         margin: 0 auto 20px;
     }
 

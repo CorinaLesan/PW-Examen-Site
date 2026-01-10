@@ -947,8 +947,8 @@ section#exercises-BentOverRow .button-add-BentOverRow:hover {
     section#exercises-LeverNarrowGripSeatedRow img,
     section#exercises-45degreehyperextension img,
     section#exercises-BentOverRow img {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
         margin: 0 auto 20px;
     }
 
@@ -1150,7 +1150,7 @@ section#exercises-BentOverRow .button-add-BentOverRow:hover {
     }
 
     .logo {
-        margin: 0px 10px 10px 13px;
+        margin: 0px 10px 10px 135px;
         font-size: 20px;
         padding: 8px 15px;
         letter-spacing: 2px;

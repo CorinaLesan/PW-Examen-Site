@@ -947,8 +947,8 @@ section#exercises-DumbbellWalkingLunges .button-add-DumbbellWalkingLunges:hover 
     section#exercises-SledHackSquat img,
     section#exercises-Squat img,
     section#exercises-DumbbellWalkingLunges img {
-        width: 150px;
-        height: 150px;
+        width: 350px;
+        height: 250px;
         margin: 0 auto 20px;
     }
 

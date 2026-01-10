@@ -947,8 +947,8 @@ section#exercises-WheelRollout .button-add-WheelRollout:hover {
     section#exercises-SidePlank img,
     section#exercises-ElbowToKnee img,
     section#exercises-WheelRollout img {
-        width: 150px;
-        height: 150px;
+        width: 350px;
+        height: 200px;
         margin: 0 auto 20px;
     }
 
