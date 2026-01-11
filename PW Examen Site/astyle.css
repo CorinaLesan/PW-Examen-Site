@@ -55,28 +55,11 @@ nav {
     font-size: 19px;
     font-weight: 600;
     letter-spacing: 1px;
-    transition: color 0.3s;
+    transition: color 0.3;
 }
 
 .nav-links a:hover {
     color: #ff0000;
-}
-
-nav .btn {
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 7px;
-    padding: 12px 22px;
-    font-size: 22px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s;
-    white-space: nowrap;
-}
-
-nav .btn:hover {
-    background-color: #fffb00;
-    color: rgb(0, 0, 0);
 }
 
 .dropdown,
@@ -90,7 +73,7 @@ nav .btn:hover {
     top: 100%;
     left: 0;
     background-color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba (0, 0, 0, 0.1);
     list-style: none;
     padding: 10px 0;
     min-width: 250px;
@@ -116,18 +99,28 @@ nav .btn:hover {
     transition: all 0.3s;
 }
 
-.dropdown-menu a:hover,
-.drop-down-menu-second a:hover {
-    background-color: #f5f5f5;
-    color: #ff0000;
-    padding-left: 25px;
-}
-
 .dropdown:hover .dropdown-menu,
 .drop-down-second:hover .drop-down-menu-second {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+}
+
+nav .btn {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    padding: 12px 22px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3;
+    white-space: nowrap;
+}
+
+nav .btn:hover {
+    background-color: #fffb00;
+    color: rgb(0, 0, 0);
 }
 
 main {
@@ -162,16 +155,6 @@ main {
     text-align: center;
 }
 
-.exercise-illustration {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .exercise-text {
     font-size: 22px;
     color: #000000;
@@ -198,16 +181,16 @@ main {
     display: flex;
     gap: 25px;
     align-items: flex-start;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3, box-shadow 0.3s;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto 0;
 }
 
 .exercise-card-one:hover,
 .exercise-card-second:hover,
 .exercise-card-third:hover {
-    transform: translateY(-5px);
+    transform: translateY (-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -225,13 +208,6 @@ main {
     padding: 10px;
 }
 
-.icon-one img,
-.icon-second img,
-.icon-third img {
-    width: 100%;
-    height: auto;
-}
-
 .content,
 .content-second,
 .content-third {
@@ -246,7 +222,6 @@ main {
     margin-bottom: 10px;
     color: #2c3e50;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
 .description,
