@@ -172,7 +172,13 @@ main {
     justify-content: center;
 }
 
-.exercise-text {
+.exercise-illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.exercise-label {
     font-size: 22px;
     color: #000000;
     text-transform: uppercase;
