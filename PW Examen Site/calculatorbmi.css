@@ -95,7 +95,7 @@ nav .btn:hover {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: a11 0.3s ease;
+    transition: all 0.3s ease;
     z-index: 1000;
 }
 
@@ -111,7 +111,7 @@ nav .btn:hover {
     text-transform: none;
     letter-spacing: 0;
     color: #333;
-    transition: a11 0.3s;
+    transition: all 0.3s;
 }
 
 .dropdown-menu a:hover {
@@ -164,7 +164,7 @@ nav .btn:hover {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: a11 0.3s ease;
+    transition: all 0.3s ease;
     z-index: 1000;
 }
 
@@ -180,7 +180,7 @@ nav .btn:hover {
     text-transform: none;
     letter-spacing: 0;
     color: #333;
-    transition: a11 0.3s;
+    transition: all 0.3s;
 }
 
 .drop-down-menu-second a:hover {
