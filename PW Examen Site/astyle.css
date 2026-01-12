@@ -303,6 +303,7 @@ main {
     cursor: pointer;
     transition: background-color 0.3s;
     display: inline-block;
+    text-decoration: none;
 }
 
 .reg-btn:hover {
